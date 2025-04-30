@@ -17,7 +17,7 @@ export default function Home() {
               Cuidamos de tus mascotas como si fueran nuestras
             </h1>
             <p className="text-lg text-gray-600 mb-6">
-              En Veterinaria PetCare ofrecemos atención médica de calidad, productos especializados y todo lo que tu
+              En Veterinaria Hercules ofrecemos atención médica de calidad, productos especializados y todo lo que tu
               mascota necesita.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -97,29 +97,33 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ServiceCard
-            title="Consulta General"
-            description="Revisión completa del estado de salud de tu mascota."
+            title="Consultas generales y especializadas"
+            description="Ofrecemos atención veterinaria integral, tanto preventiva como de diagnóstico y tratamiento, adaptada a las necesidades específicas de cada mascota."
             icon="stethoscope"
           />
           <ServiceCard
-            title="Vacunación"
-            description="Programa completo de vacunación para perros y gatos."
+            title="Vacunación y desparasitación"
+            description="Aseguramos la protección de tu mascota contra enfermedades comunes, mediante un esquema de vacunación completo y un programa de desparasitación efectivo."
             icon="syringe"
           />
           <ServiceCard
-            title="Cirugía"
-            description="Procedimientos quirúrgicos con equipamiento moderno."
+            title="Cirugías programadas y de emergencia"
+            description="Realizamos intervenciones quirúrgicas tanto planificadas como de urgencia, con un enfoque profesional y en un ambiente controlado y seguro."
             icon="scissors"
           />
-          <ServiceCard title="Laboratorio" description="Análisis clínicos y diagnósticos precisos." icon="flask" />
+          <ServiceCard 
+          title="Laboratorio Clinico" 
+          description="Realizamos pruebas de laboratorio para obtener diagnósticos rápidos y confiables, permitiendo un tratamiento oportuno y adecuado" 
+          icon="flask" />
+
           <ServiceCard
-            title="Peluquería"
-            description="Servicios de estética y cuidado para tu mascota."
+            title="Peluquería y baño medicado"
+            description="Servicios de corte de pelo, baño y cuidado estético realizados por profesionales, garantizando el bienestar y la higiene de tu mascota."
             icon="scissors"
           />
           <ServiceCard
             title="Tienda"
-            description="Productos de calidad para la alimentación y cuidado."
+            description="Disponemos de una amplia gama de alimentos y productos especializados para el cuidado y la nutrición de tu mascota, seleccionados por su calidad y efectividad"
             icon="shopping-bag"
           />
         </div>
@@ -224,12 +228,26 @@ export default function Home() {
         </div>
 
         <div className="relative h-[400px] w-full rounded-lg overflow-hidden">
-          <Link href="https://maps.google.com" target="_blank">
-            <Image src="/placeholder.svg?height=400&width=1200" alt="Mapa de ubicación" fill className="object-cover" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Button className="bg-indigo-600 hover:bg-indigo-700">Abrir en Google Maps</Button>
-            </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.754180833525!2d-76.5062012!3d3.492575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a997aa17475f%3A0xd88bb2d00e4d12be!2sCl%C3%ADnica%20Veterinaria%20H%C3%A9rcules!5e0!3m2!1ses-419!2sco!4v1689638940143!5m2!1ses-419!2sco"
+            width="100%"
+            height="100%"
+            loading="lazy"
+            allowFullScreen
+            style={{ border: 0 }}
+            className="absolute top-0 left-0 w-full h-full"
+          ></iframe>
+        <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+          <Link
+            href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+H%C3%A9rcules/@3.492575,-76.5062012,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a997aa17475f:0xd88bb2d00e4d12be!8m2!3d3.4925696!4d-76.5036263!16s%2Fg%2F11k51ggr95?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">
+              Abrir en Google Maps
+            </button>
           </Link>
+         </div>
         </div>
       </section>
 

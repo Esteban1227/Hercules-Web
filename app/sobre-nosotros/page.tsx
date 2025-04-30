@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import ContactSection from "@/components/contact-section"
 import ServiceCard from "@/components/service-card"
+import Veterinarians from "@/components/veterinary-equipment"
 
 export default function SobreNosotros() {
   return (
@@ -26,21 +27,23 @@ export default function SobreNosotros() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Nuestra Historia</h2>
-              <p className="text-gray-600 mb-4">
-                Fundada en 2010, Veterinaria PetCare nació con la misión de proporcionar atención médica de calidad para
-                mascotas en un ambiente cálido y acogedor.
+              <p className="text-gray-600 mb-4 text-justify" >
+                Fundada en el año 2023, la Clínica Veterinaria Hércules nació con el propósito de ofrecer atención médica de calidad para mascotas, 
+                impulsada por una profunda vocación hacia los animales. Esta pasión nació desde la infancia de nuestro fundador y médico principal, 
+                cuya conexión con los animales lo inspiró a convertir su vocación en un compromiso de vida.
+
               </p>
-              <p className="text-gray-600 mb-4">
-                A lo largo de los años, hemos crecido hasta convertirnos en un centro veterinario integral, ofreciendo
-                una amplia gama de servicios y productos para el bienestar animal.
+              <p className="text-gray-600 mb-4 text-justify">
+                El nombre de nuestra clínica rinde homenaje a Hércules, un compañero entrañable que marcó profundamente nuestra historia y nos inspiró a crear un 
+                espacio donde los animales sean atendidos con amor, respeto y profesionalismo.
               </p>
-              <p className="text-gray-600">
-                Nuestro compromiso con la excelencia y el trato personalizado nos ha permitido ganar la confianza de
-                miles de familias que nos confían la salud de sus queridas mascotas.
+              <p className="text-gray-600 text-justify">
+                 Con un enfoque cercano y altamente profesional, hemos crecido ofreciendo servicios especializados que siempre buscan el bienestar de cada paciente. 
+                 Nuestro compromiso con la excelencia ha consolidado la confianza de nuestros clientes, quienes nos han confiado el cuidado de sus queridas mascotas.
               </p>
             </div>
             <div className="relative h-[300px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=300&width=500" alt="Nuestra clínica" fill className="object-cover" />
+              <Image src="/about-us.jpg" alt="Nuestra clínica" fill className="object-cover" />
             </div>
           </div>
         </TabsContent>
@@ -50,9 +53,11 @@ export default function SobreNosotros() {
             <Card>
               <CardContent className="p-6">
                 <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Nuestra Misión</h2>
-                <p className="text-gray-600">
-                  Proporcionar atención veterinaria de la más alta calidad, con un enfoque integral y personalizado,
-                  para mejorar la calidad de vida de las mascotas y fortalecer el vínculo con sus familias.
+                <p className="text-gray-600 text-justify">
+                  Brindar atención médica veterinaria de alta calidad, con amor, respeto y compromiso, 
+                  protegiendo la salud y el bienestar de los animales. Nos esforzamos por ofrecer un servicio humano y profesional, 
+                  tratando a cada paciente como un miembro más de nuestra familia.
+
                 </p>
               </CardContent>
             </Card>
@@ -60,9 +65,10 @@ export default function SobreNosotros() {
             <Card>
               <CardContent className="p-6">
                 <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Nuestra Visión</h2>
-                <p className="text-gray-600">
-                  Ser reconocidos como el centro veterinario de referencia en nuestra comunidad, destacando por la
-                  excelencia en el servicio, la innovación constante y el compromiso con el bienestar animal.
+                <p className="text-gray-600 text-justify">
+                    Ser reconocidos como una clínica veterinaria líder en nuestra comunidad, destacándonos por nuestro trato cercano, 
+                    nuestra excelencia médica y la pasión genuina que sentimos por los animales. Aspiramos a crecer y expandir nuestros servicios, 
+                    sin perder jamás la esencia de amor y compromiso que dio vida a la Clínica Veterinaria Hércules.
                 </p>
               </CardContent>
             </Card>
@@ -91,30 +97,28 @@ export default function SobreNosotros() {
 
         <TabsContent value="equipo" className="mt-6">
           <h2 className="text-2xl font-semibold text-indigo-700 mb-6 text-center">Nuestro Equipo Profesional</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((i) => (
-              <Card key={i} className="text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6" >
+            {Veterinarians.map((miembro, index) => (
+              <Card key={index} className="text-center">
                 <CardContent className="p-6">
                   <div className="w-32 h-32 rounded-full mx-auto mb-4 relative overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=128&width=128"
-                      alt={`Dr. Nombre ${i}`}
+                      src={miembro.imagen}
+                      alt={miembro.nombre}
                       fill
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-medium text-indigo-700 mb-1">Dr. Nombre {i}</h3>
-                  <p className="text-gray-500 mb-3">Veterinario{i === 1 ? " Principal" : ""}</p>
-                  <p className="text-gray-600 text-sm">
-                    Especialista con más de {5 + i} años de experiencia en medicina veterinaria, apasionado por el
-                    cuidado animal.
-                  </p>
+                  <h3 className="text-xl font-medium text-indigo-700 mb-1">{miembro.nombre}</h3>
+                  <p className="text-gray-500 mb-3">{miembro.cargo}</p>
+                  <p className="text-gray-600 text-sm text-justify">{miembro.descripcion}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
         </TabsContent>
       </Tabs>
+
 
       {/* Services Section */}
       <section className="mb-16">
@@ -127,56 +131,62 @@ export default function SobreNosotros() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ServiceCard
-            title="Consulta General"
-            description="Revisión completa del estado de salud de tu mascota con diagnóstico y recomendaciones personalizadas."
+            title="Consulta General y especializada"
+            description="Ofrecemos atención veterinaria integral, tanto preventiva como de diagnóstico y tratamiento, adaptada a las necesidades específicas de cada mascota."
             icon="stethoscope"
             expanded
           />
           <ServiceCard
-            title="Vacunación"
-            description="Programa completo de vacunación para perros y gatos, siguiendo los protocolos internacionales más actualizados."
+            title="Vacunación y desparasitacion"
+            description="Aseguramos la protección de tu mascota contra enfermedades comunes, mediante un esquema de vacunación completo y un programa de desparasitación efectivo."
             icon="syringe"
             expanded
           />
           <ServiceCard
-            title="Cirugía"
-            description="Procedimientos quirúrgicos con equipamiento moderno y técnicas mínimamente invasivas cuando es posible."
+            title="Cirugías programadas y de emergencia"
+            description="Realizamos intervenciones quirúrgicas tanto planificadas como de urgencia, con un enfoque profesional y en un ambiente controlado y seguro."
             icon="scissors"
             expanded
           />
           <ServiceCard
-            title="Laboratorio"
-            description="Análisis clínicos y diagnósticos precisos con resultados rápidos para un tratamiento oportuno."
+            title="Diagnóstico por imagen (ecografías y radiografías)"
+            description="Disponemos de tecnología avanzada para obtener imágenes precisas, esenciales para un diagnóstico detallado de la salud de tu mascota."
             icon="flask"
             expanded
           />
           <ServiceCard
-            title="Peluquería"
-            description="Servicios de estética y cuidado para tu mascota, realizados por profesionales especializados en grooming."
+            title="Laboratorio clínico"
+            description="Realizamos pruebas de laboratorio para obtener diagnósticos rápidos y confiables, permitiendo un tratamiento oportuno y adecuado."
+            icon="flask"
+            expanded
+          />
+           <ServiceCard
+            title="Profilaxis dental"
+            description="Ofrecemos limpieza y cuidado dental para prevenir enfermedades bucodentales, mejorando la salud general de tu mascota."
+            icon="scissors"
+            expanded
+          />
+          <ServiceCard
+            title="Peluquería y baño"
+            description="Servicios de corte de pelo, baño y cuidado estético realizados por profesionales, garantizando el bienestar y la higiene de tu mascota."
             icon="scissors"
             expanded
           />
           <ServiceCard
             title="Tienda"
-            description="Productos de calidad para la alimentación y cuidado de tu mascota, seleccionados por nuestros veterinarios."
+            description="Disponemos de una amplia gama de alimentos y productos especializados para el cuidado y la nutrición de tu mascota, seleccionados por su calidad y efectividad."
             icon="shopping-bag"
             expanded
           />
           <ServiceCard
-            title="Odontología"
-            description="Cuidado dental completo, desde limpiezas hasta tratamientos especializados para problemas bucales."
-            icon="tooth"
-            expanded
-          />
-          <ServiceCard
-            title="Hospitalización"
-            description="Atención continua para mascotas que requieren observación o tratamientos prolongados."
+            title="Hospitalización y cuidados intensivos"
+            description="Atención continua y personalizada para mascotas que requieren observación constante o tratamientos prolongados, garantizando su bienestar en todo momento."
             icon="hospital"
             expanded
           />
           <ServiceCard
             title="Emergencias"
-            description="Servicio de urgencias veterinarias para situaciones que requieren atención inmediata."
+            description="Servicio de urgencias veterinarias, ofreciendo atención inmediata para situaciones críticas que requieren intervención rápida y profesional."
             icon="alert-circle"
             expanded
           />
