@@ -11,8 +11,11 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Veterinaria PetCare - Cuidamos de tus mascotas",
   description: "Clínica veterinaria con servicios completos para el cuidado y bienestar de tus mascotas",
-  themeColor: "#2e3092",
     generator: 'v0.dev'
+}
+
+export const viewport = {
+  themeColor: "#2e3092"
 }
 
 export default function RootLayout({

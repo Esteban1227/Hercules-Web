@@ -62,7 +62,7 @@ export default function Contacto() {
             <h3 className="font-medium text-lg mb-2">Dirección</h3>
             <p className="text-gray-600 mb-4">Visítanos en nuestra clínica</p>
             <p className="text-gray-600">Av 2b norte # 73a -26 , Cali</p>
-            <Link href="https://maps.google.com" target="_blank" className="text-indigo-600 hover:underline text-sm">
+            <Link href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+H%C3%A9rcules/@3.492575,-76.5062012,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a997aa17475f:0xd88bb2d00e4d12be!8m2!3d3.4925696!4d-76.5036263!16s%2Fg%2F11k51ggr95?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D" target="_blank" className="text-indigo-600 hover:underline text-sm">
               Ver en Google Maps
             </Link>
           </CardContent>
@@ -87,7 +87,7 @@ export default function Contacto() {
             </div>
             <h3 className="font-medium text-lg mb-2">Reseñas</h3>
             <p className="text-gray-600 mb-4">Comparte tu experiencia</p>
-            <Link href="https://google.com/maps" target="_blank" className="text-indigo-600 hover:underline">
+            <Link href="https://www.google.com/search?sca_esv=cd2e0a442ffc9e64&rlz=1C1VDKB_esCO1018CO1018&sxsrf=AHTn8zrX9cvhsX4IUEPecz-a52N9SAFLpA:1745965460277&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzdrL-pw0zeUYMH152WGI8kOwRSFCAvlLyyksIHEymx62cHa_QNTEtWOZWgKW8Br6HqICUvcdTqrwRCG-Z-zXbTmAhKyjEvMXzd-U_9b-32-e0y1o-1eXfKRwKwtS37nNj-sC-eI%3D&q=Cl%C3%ADnica+Veterinaria+H%C3%A9rcules+Opiniones&sa=X&ved=2ahUKEwid-rKYpP6MAxUZQzABHbjSE_0Q0bkNegQIIRAD&biw=1366&bih=599&dpr=1" target="_blank" className="text-indigo-600 hover:underline">
               Ver y dejar reseñas en Google
             </Link>
           </CardContent>
@@ -235,13 +235,27 @@ export default function Contacto() {
       <section className="mb-16">
         <h2 className="text-2xl font-bold text-indigo-800 mb-6">Nuestra Ubicación</h2>
         <div className="relative h-[400px] w-full rounded-lg overflow-hidden">
-          <Link href="https://maps.google.com" target="_blank">
-            <Image src="/placeholder.svg?height=400&width=1200" alt="Mapa de ubicación" fill className="object-cover" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Button className="bg-indigo-600 hover:bg-indigo-700">Abrir en Google Maps</Button>
-            </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.754180833525!2d-76.5062012!3d3.492575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a997aa17475f%3A0xd88bb2d00e4d12be!2sCl%C3%ADnica%20Veterinaria%20H%C3%A9rcules!5e0!3m2!1ses-419!2sco!4v1689638940143!5m2!1ses-419!2sco"
+            width="100%"
+            height="100%"
+            loading="lazy"
+            allowFullScreen
+            style={{ border: 0 }}
+            className="absolute top-0 left-0 w-full h-full"
+          ></iframe>
+        <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+          <Link
+            href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+H%C3%A9rcules/@3.492575,-76.5062012,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a997aa17475f:0xd88bb2d00e4d12be!8m2!3d3.4925696!4d-76.5036263!16s%2Fg%2F11k51ggr95?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">
+              Abrir en Google Maps
+            </button>
           </Link>
         </div>
+      </div>
       </section>
 
       {/* FAQ Section */}
@@ -252,17 +266,15 @@ export default function Contacto() {
             <CardContent className="p-6">
               <h3 className="font-medium text-lg text-indigo-700 mb-2">¿Necesito cita previa para una consulta?</h3>
               <p className="text-gray-600">
-                Sí, recomendamos solicitar cita previa para garantizar una atención sin tiempos de espera. Puedes
-                hacerlo por WhatsApp.
+                No, en la clínica veterinaria hércules no necesitas pedir cita previa. Atendemos a tu peludito por orden de llegada, con el cariño y la dedicación que se merece. 
               </p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="p-6">
-              <h3 className="font-medium text-lg text-indigo-700 mb-2">¿Qué servicios de urgencia ofrecen?</h3>
+              <h3 className="font-medium text-lg text-indigo-700 mb-2">¿Atienden animales exóticos o solo perros y gatos?</h3>
               <p className="text-gray-600">
-                Ofrecemos servicio de urgencias durante nuestro horario de atención. Para emergencias fuera de horario,
-                contáctanos por WhatsApp.
+                No, actualmente solo atendemos perros y gatos. Nos enfocamos en brindarles la mejor atención posible, con servicios especializados y personalizados para ellos.
               </p>
             </CardContent>
           </Card>
@@ -270,8 +282,7 @@ export default function Contacto() {
             <CardContent className="p-6">
               <h3 className="font-medium text-lg text-indigo-700 mb-2">¿Realizan visitas a domicilio?</h3>
               <p className="text-gray-600">
-                Sí, ofrecemos servicio a domicilio para casos específicos. Consulta disponibilidad y tarifas por
-                WhatsApp.
+                No, por el momento no ofrecemos servicio a domicilio. Atendemos con gusto en nuestra clínica, donde contamos con todo lo necesario para brindarle a tu mascota el mejor cuidado.
               </p>
             </CardContent>
           </Card>
@@ -279,8 +290,7 @@ export default function Contacto() {
             <CardContent className="p-6">
               <h3 className="font-medium text-lg text-indigo-700 mb-2">¿Cómo puedo pagar por los servicios?</h3>
               <p className="text-gray-600">
-                Aceptamos efectivo, tarjetas de crédito/débito y transferencias bancarias. También ofrecemos planes de
-                pago para tratamientos extensos.
+                Aceptamos efectivo, tarjetas de crédito/débito y transferencias bancarias a Bancolombia y Nequi.
               </p>
             </CardContent>
           </Card>

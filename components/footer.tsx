@@ -100,7 +100,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/sobre-nosotros" className="text-indigo-100 hover:text-white transition-colors">
-                  Consulta General
+                  Consulta 
                 </Link>
               </li>
               <li>
@@ -110,7 +110,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/sobre-nosotros" className="text-indigo-100 hover:text-white transition-colors">
-                  Cirugía
+                  Cirugía 
+                </Link>
+              </li>
+              <li>
+                <Link href="/sobre-nosotros" className="text-indigo-100 hover:text-white transition-colors">
+                  Diagnostico por imagen 
                 </Link>
               </li>
               <li>
@@ -120,7 +125,27 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/sobre-nosotros" className="text-indigo-100 hover:text-white transition-colors">
-                  Peluquería
+                  Profilaxis
+                </Link>
+              </li>
+              <li>
+                <Link href="/sobre-nosotros" className="text-indigo-100 hover:text-white transition-colors">
+                  Hospitalizacion
+                </Link>
+              </li>
+              <li>
+                <Link href="/sobre-nosotros" className="text-indigo-100 hover:text-white transition-colors">
+                  Urgencias
+                </Link>
+              </li>
+              <li>
+                <Link href="/sobre-nosotros" className="text-indigo-100 hover:text-white transition-colors">
+                  Baño y peluquería
+                </Link>
+              </li>
+              <li>
+                <Link href="/sobre-nosotros" className="text-indigo-100 hover:text-white transition-colors">
+                  Tienda
                 </Link>
               </li>
             </ul>
@@ -146,7 +171,7 @@ export default function Footer() {
                   href="mailto:info@veterinariapetcare.com"
                   className="text-indigo-100 hover:text-white transition-colors"
                 >
-                  info@veterinariapetcare.com
+                  clinicaveterinariahercules@gmail.com
                 </Link>
               </li>
               <li className="flex items-start gap-3">

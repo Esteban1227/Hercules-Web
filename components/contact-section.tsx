@@ -41,7 +41,7 @@ export default function ContactSection() {
                   <p className="font-medium">Dirección</p>
                   <p className="text-gray-600">Av. 2b norte # 73a -26 , Cali</p>
                   <Link
-                    href="https://maps.google.com"
+                    href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+H%C3%A9rcules/@3.492575,-76.5062012,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a997aa17475f:0xd88bb2d00e4d12be!8m2!3d3.4925696!4d-76.5036263!16s%2Fg%2F11k51ggr95?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D"
                     target="_blank"
                     className="text-indigo-600 hover:underline text-sm"
                   >
@@ -63,8 +63,8 @@ export default function ContactSection() {
                 <Mail className="h-5 w-5 text-indigo-600 mt-0.5" />
                 <div>
                   <p className="font-medium">Email</p>
-                  <Link href="mailto:info@veterinariapetcare.com" className="text-gray-600 hover:text-indigo-600">
-                    info@veterinariapetcare.com
+                  <Link href="mailto:clinicaveterinariahercules@gmail.com" className="text-gray-600 hover:text-indigo-600">
+                    clinicaveterinariahercules@gmail.com
                   </Link>
                 </div>
               </li>
@@ -119,7 +119,7 @@ export default function ContactSection() {
 
             <div className="mt-6">
               <Button asChild variant="outline" className="w-full border-indigo-600 text-indigo-600 hover:bg-indigo-50">
-                <Link href="https://google.com/maps" target="_blank" className="flex items-center justify-center gap-2">
+                <Link href="https://www.google.com/search?sca_esv=cd2e0a442ffc9e64&rlz=1C1VDKB_esCO1018CO1018&sxsrf=AHTn8zrX9cvhsX4IUEPecz-a52N9SAFLpA:1745965460277&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzdrL-pw0zeUYMH152WGI8kOwRSFCAvlLyyksIHEymx62cHa_QNTEtWOZWgKW8Br6HqICUvcdTqrwRCG-Z-zXbTmAhKyjEvMXzd-U_9b-32-e0y1o-1eXfKRwKwtS37nNj-sC-eI%3D&q=Cl%C3%ADnica+Veterinaria+H%C3%A9rcules+Opiniones&sa=X&ved=2ahUKEwid-rKYpP6MAxUZQzABHbjSE_0Q0bkNegQIIRAD&biw=1366&bih=599&dpr=1" target="_blank" className="flex items-center justify-center gap-2">
                   <Star className="h-5 w-5 fill-yellow-400 stroke-yellow-400" />
                   Ver reseñas en Google
                 </Link>
