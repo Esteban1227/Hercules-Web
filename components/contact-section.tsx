@@ -12,8 +12,8 @@ export default function ContactSection() {
           Estamos aquí para responder tus preguntas y atender a tu mascota. Contáctanos por WhatsApp para una respuesta
           rápida.
         </p>
-        <Button asChild size="lg" className="bg-green-500 hover:bg-green-600">
-          <Link href="https://wa.me/123456789" target="_blank" className="flex items-center gap-2">
+        <Button asChild size="default" className="bg-green-500 hover:bg-green-600">
+          <Link href="https://wa.me/573116370334" target="_blank" className="flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -39,7 +39,7 @@ export default function ContactSection() {
                 <MapPin className="h-5 w-5 text-indigo-600 mt-0.5" />
                 <div>
                   <p className="font-medium">Dirección</p>
-                  <p className="text-gray-600">Av. Principal 123, Ciudad</p>
+                  <p className="text-gray-600">Av. 2b norte # 73a -26 , Cali</p>
                   <Link
                     href="https://maps.google.com"
                     target="_blank"
@@ -53,8 +53,8 @@ export default function ContactSection() {
                 <Phone className="h-5 w-5 text-indigo-600 mt-0.5" />
                 <div>
                   <p className="font-medium">WhatsApp</p>
-                  <Link href="https://wa.me/123456789" target="_blank" className="text-gray-600 hover:text-indigo-600">
-                    +123 456 7890
+                  <Link href="https://wa.me/573116370334" target="_blank" className="text-gray-600 hover:text-indigo-600">
+                    +57 311 637 0334
                   </Link>
                   <p className="text-sm text-gray-500 mt-1">Respuesta rápida por WhatsApp</p>
                 </div>
@@ -72,9 +72,8 @@ export default function ContactSection() {
                 <Clock className="h-5 w-5 text-indigo-600 mt-0.5" />
                 <div>
                   <p className="font-medium">Horario de Atención</p>
-                  <p className="text-gray-600">Lun-Vie: 9am-7pm</p>
-                  <p className="text-gray-600">Sáb: 9am-2pm</p>
-                  <p className="text-gray-600">Dom: Cerrado</p>
+                  <p className="text-gray-600">Lun-Sab: 8am-10pm</p>
+                  <p className="text-gray-600">Dom: 9am-6pm</p>
                 </div>
               </li>
             </ul>
@@ -88,7 +87,7 @@ export default function ContactSection() {
                   variant="outline"
                   className="rounded-full border-indigo-200 hover:border-indigo-600 hover:bg-indigo-50"
                 >
-                  <Link href="https://facebook.com" target="_blank">
+                  <Link href="https://www.facebook.com/clinicaveterinariahercules24horas" target="_blank">
                     <Facebook className="h-4 w-4 text-indigo-600" />
                     <span className="sr-only">Facebook</span>
                   </Link>
@@ -99,7 +98,7 @@ export default function ContactSection() {
                   variant="outline"
                   className="rounded-full border-indigo-200 hover:border-indigo-600 hover:bg-indigo-50"
                 >
-                  <Link href="https://instagram.com" target="_blank">
+                  <Link href="https://www.instagram.com/clinicaveterinariahercules/" target="_blank">
                     <Instagram className="h-4 w-4 text-indigo-600" />
                     <span className="sr-only">Instagram</span>
                   </Link>
@@ -110,9 +109,9 @@ export default function ContactSection() {
                   variant="outline"
                   className="rounded-full border-indigo-200 hover:border-indigo-600 hover:bg-indigo-50"
                 >
-                  <Link href="https://twitter.com" target="_blank">
+                  <Link href="https://www.tiktok.com/@veterinariaherculescali" target="_blank">
                     <Twitter className="h-4 w-4 text-indigo-600" />
-                    <span className="sr-only">Twitter</span>
+                    <span className="sr-only">TikTok</span>
                   </Link>
                 </Button>
               </div>
@@ -140,7 +139,7 @@ export default function ContactSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <Button asChild variant="outline" className="h-auto py-4 justify-start text-left">
                 <Link
-                  href="https://wa.me/123456789?text=Hola,%20quisiera%20agendar%20una%20cita%20para%20mi%20mascota"
+                  href="https://wa.me/573116370334?text=Hola,%20quisiera%20agendar%20una%20cita%20para%20mi%20mascota"
                   target="_blank"
                   className="flex items-start gap-3"
                 >
@@ -170,15 +169,15 @@ export default function ContactSection() {
                     </svg>
                   </div>
                   <div>
-                    <span className="font-medium block mb-1">Agendar una cita</span>
-                    <span className="text-sm text-gray-500">Para consultas, vacunas o cualquier servicio</span>
+                    <span className="font-medium block mb-1">Agenda la recogida de tu mascota</span>
+                    <span className="text-sm text-gray-500">Para baño y peluqueria</span>
                   </div>
                 </Link>
               </Button>
 
               <Button asChild variant="outline" className="h-auto py-4 justify-start text-left">
                 <Link
-                  href="https://wa.me/123456789?text=Hola,%20quisiera%20información%20sobre%20los%20servicios%20de%20la%20veterinaria"
+                  href="https://wa.me/573116370334?text=Hola,%20quisiera%20información%20sobre%20los%20servicios%20de%20la%20veterinaria"
                   target="_blank"
                   className="flex items-start gap-3"
                 >
@@ -209,7 +208,7 @@ export default function ContactSection() {
 
               <Button asChild variant="outline" className="h-auto py-4 justify-start text-left">
                 <Link
-                  href="https://wa.me/123456789?text=Hola,%20quisiera%20consultar%20sobre%20los%20precios%20de%20los%20servicios"
+                  href="https://wa.me/573116370334?text=Hola,%20quisiera%20consultar%20sobre%20los%20precios%20de%20los%20servicios"
                   target="_blank"
                   className="flex items-start gap-3"
                 >
@@ -240,7 +239,7 @@ export default function ContactSection() {
 
               <Button asChild variant="outline" className="h-auto py-4 justify-start text-left">
                 <Link
-                  href="https://wa.me/123456789?text=Hola,%20tengo%20una%20emergencia%20con%20mi%20mascota"
+                  href="https://wa.me/573116370334?text=Hola,%20tengo%20una%20emergencia%20con%20mi%20mascota"
                   target="_blank"
                   className="flex items-start gap-3"
                 >

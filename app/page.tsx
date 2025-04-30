@@ -55,7 +55,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-medium text-gray-900">Horario de atención</h3>
-                <p className="text-gray-600">Lun-Vie: 9am-7pm | Sáb: 9am-2pm</p>
+                <p className="text-gray-600">Lun-Sab: 8am-10pm | Dom: 9am-6pm</p>
               </div>
             </CardContent>
           </Card>
@@ -67,7 +67,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-medium text-gray-900">Contacto</h3>
-                <p className="text-gray-600">+123 456 7890</p>
+                <p className="text-gray-600">+57 311 637 0334</p>
               </div>
             </CardContent>
           </Card>
@@ -79,7 +79,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-medium text-gray-900">Ubicación</h3>
-                <p className="text-gray-600">Av. Principal 123, Ciudad</p>
+                <p className="text-gray-600">Av. 2b norte # 73a -26, Cali</p>
               </div>
             </CardContent>
           </Card>
@@ -139,7 +139,8 @@ export default function Home() {
             La satisfacción de nuestros clientes y sus mascotas es nuestra mayor recompensa.
           </p>
           <Button asChild variant="outline" className="border-indigo-600 text-indigo-600 hover:bg-indigo-50">
-            <Link href="https://google.com/maps" target="_blank" className="flex items-center gap-2">
+            <Link href="https://www.google.com/search?sca_esv=cd2e0a442ffc9e64&rlz=1C1VDKB_esCO1018CO1018&sxsrf=AHTn8zrX9cvhsX4IUEPecz-a52N9SAFLpA:1745965460277&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzdrL-pw0zeUYMH152WGI8kOwRSFCAvlLyyksIHEymx62cHa_QNTEtWOZWgKW8Br6HqICUvcdTqrwRCG-Z-zXbTmAhKyjEvMXzd-U_9b-32-e0y1o-1eXfKRwKwtS37nNj-sC-eI%3D&q=Cl%C3%ADnica+Veterinaria+H%C3%A9rcules+Opiniones&sa=X&ved=2ahUKEwid-rKYpP6MAxUZQzABHbjSE_0Q0bkNegQIIRAD&biw=1366&bih=599&dpr=1" 
+              target="_blank" className="flex items-center gap-2">
               <Star className="h-5 w-5 fill-yellow-400 stroke-yellow-400" />
               Ver reseñas en Google
             </Link>

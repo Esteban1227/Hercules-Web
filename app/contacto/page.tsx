@@ -14,7 +14,7 @@ export default function Contacto() {
           rápida.
         </p>
         <Button asChild size="lg" className="bg-green-500 hover:bg-green-600">
-          <Link href="https://wa.me/123456789" target="_blank" className="flex items-center gap-2">
+          <Link href="https://wa.me/573116370334" target="_blank" className="flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -48,8 +48,8 @@ export default function Contacto() {
             </div>
             <h3 className="font-medium text-lg mb-2">WhatsApp</h3>
             <p className="text-gray-600 mb-4">Respuesta rápida a tus consultas</p>
-            <Link href="https://wa.me/123456789" target="_blank" className="text-indigo-600 hover:underline">
-              +123 456 7890
+            <Link href="https://wa.me/573116370334" target="_blank" className="text-indigo-600 hover:underline">
+              +57 311 637 0334
             </Link>
           </CardContent>
         </Card>
@@ -61,7 +61,7 @@ export default function Contacto() {
             </div>
             <h3 className="font-medium text-lg mb-2">Dirección</h3>
             <p className="text-gray-600 mb-4">Visítanos en nuestra clínica</p>
-            <p className="text-gray-600">Av. Principal 123, Ciudad</p>
+            <p className="text-gray-600">Av 2b norte # 73a -26 , Cali</p>
             <Link href="https://maps.google.com" target="_blank" className="text-indigo-600 hover:underline text-sm">
               Ver en Google Maps
             </Link>
@@ -75,9 +75,8 @@ export default function Contacto() {
             </div>
             <h3 className="font-medium text-lg mb-2">Horario</h3>
             <p className="text-gray-600 mb-4">Estamos para atenderte</p>
-            <p className="text-gray-600">Lun-Vie: 9am-7pm</p>
-            <p className="text-gray-600">Sáb: 9am-2pm</p>
-            <p className="text-gray-600">Dom: Cerrado</p>
+            <p className="text-gray-600">Lun-Sab: 8am-10pm</p>
+            <p className="text-gray-600">Dom: 9am-6pm</p>
           </CardContent>
         </Card>
 
@@ -101,7 +100,7 @@ export default function Contacto() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
           <Button asChild variant="outline" className="h-auto py-4 justify-start text-left">
             <Link
-              href="https://wa.me/123456789?text=Hola,%20quisiera%20agendar%20una%20cita%20para%20mi%20mascota"
+              href="https://wa.me/573116370334?text=Hola,%20quisiera%20agendar%20una%20cita%20para%20mi%20mascota"
               target="_blank"
               className="flex items-start gap-3"
             >
@@ -131,15 +130,15 @@ export default function Contacto() {
                 </svg>
               </div>
               <div>
-                <span className="font-medium block mb-1">Agendar una cita</span>
-                <span className="text-sm text-gray-500">Para consultas, vacunas o cualquier servicio</span>
+                <span className="font-medium block mb-1">Agendar recogida de tu mascota</span>
+                <span className="text-sm text-gray-500">Para baño y peluqueria</span>
               </div>
             </Link>
           </Button>
 
           <Button asChild variant="outline" className="h-auto py-4 justify-start text-left">
             <Link
-              href="https://wa.me/123456789?text=Hola,%20quisiera%20información%20sobre%20los%20servicios%20de%20la%20veterinaria"
+              href="https://wa.me/573116370334?text=Hola,%20quisiera%20información%20sobre%20los%20servicios%20de%20la%20veterinaria"
               target="_blank"
               className="flex items-start gap-3"
             >
@@ -170,7 +169,7 @@ export default function Contacto() {
 
           <Button asChild variant="outline" className="h-auto py-4 justify-start text-left">
             <Link
-              href="https://wa.me/123456789?text=Hola,%20quisiera%20consultar%20sobre%20los%20precios%20de%20los%20servicios"
+              href="https://wa.me/573116370334?text=Hola,%20quisiera%20consultar%20sobre%20los%20precios%20de%20los%20servicios"
               target="_blank"
               className="flex items-start gap-3"
             >
@@ -201,7 +200,7 @@ export default function Contacto() {
 
           <Button asChild variant="outline" className="h-auto py-4 justify-start text-left">
             <Link
-              href="https://wa.me/123456789?text=Hola,%20tengo%20una%20emergencia%20con%20mi%20mascota"
+              href="https://wa.me/573116370334?text=Hola,%20tengo%20una%20emergencia%20con%20mi%20mascota"
               target="_blank"
               className="flex items-start gap-3"
             >
@@ -299,31 +298,31 @@ export default function Contacto() {
                 <tbody>
                   <tr className="border-b">
                     <td className="py-3 font-medium">Lunes</td>
-                    <td className="py-3 text-right">9:00 AM - 7:00 PM</td>
+                    <td className="py-3 text-right">8:00 AM - 10:00 PM</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">Martes</td>
-                    <td className="py-3 text-right">9:00 AM - 7:00 PM</td>
+                    <td className="py-3 text-right">8:00 AM - 10:00 PM</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">Miércoles</td>
-                    <td className="py-3 text-right">9:00 AM - 7:00 PM</td>
+                    <td className="py-3 text-right">8:00 AM - 10:00 PM</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">Jueves</td>
-                    <td className="py-3 text-right">9:00 AM - 7:00 PM</td>
+                    <td className="py-3 text-right">8:00 AM - 10:00 PM</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">Viernes</td>
-                    <td className="py-3 text-right">9:00 AM - 7:00 PM</td>
+                    <td className="py-3 text-right">8:00 AM - 10:00 PM</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">Sábado</td>
-                    <td className="py-3 text-right">9:00 AM - 2:00 PM</td>
+                    <td className="py-3 text-right">8:00 AM - 10:00 PM</td>
                   </tr>
                   <tr>
                     <td className="py-3 font-medium">Domingo</td>
-                    <td className="py-3 text-right">Cerrado</td>
+                    <td className="py-3 text-right">9:00 AM - 6:00 PM</td>
                   </tr>
                 </tbody>
               </table>
@@ -339,7 +338,8 @@ export default function Contacto() {
                     <div className="w-2 h-2 rounded-full bg-indigo-600"></div>
                   </div>
                   <p className="text-gray-600">
-                    Para emergencias fuera del horario regular, contáctanos por WhatsApp: +123 987 6543
+                    Para urgencias fuera del horario regular, contactanos al numero de celular 311 637 0334 
+
                   </p>
                 </li>
                 <li className="flex items-start gap-2">
@@ -347,7 +347,7 @@ export default function Contacto() {
                     <div className="w-2 h-2 rounded-full bg-indigo-600"></div>
                   </div>
                   <p className="text-gray-600">
-                    Los horarios pueden variar en días festivos. Consulta nuestras redes sociales para actualizaciones.
+                    La tienda de productos está abierta durante los horarios regulares de atención de la clínica.
                   </p>
                 </li>
                 <li className="flex items-start gap-2">
@@ -355,15 +355,7 @@ export default function Contacto() {
                     <div className="w-2 h-2 rounded-full bg-indigo-600"></div>
                   </div>
                   <p className="text-gray-600">
-                    Para una mejor atención, te recomendamos agendar una cita previa por WhatsApp.
-                  </p>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="min-w-4 h-4 rounded-full bg-indigo-100 flex items-center justify-center mt-1">
-                    <div className="w-2 h-2 rounded-full bg-indigo-600"></div>
-                  </div>
-                  <p className="text-gray-600">
-                    La tienda de productos está abierta durante todo el horario de atención de la clínica.
+                    Para programar la recogida de tu mascota a domicilio, ya sea para baño, peluquería o la entrega de un producto, llámanos o escríbenos al número de celular 311 637 0334.
                   </p>
                 </li>
               </ul>

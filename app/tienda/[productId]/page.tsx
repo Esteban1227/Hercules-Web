@@ -87,7 +87,7 @@ export default function ProductPage({ params }: ProductPageProps) {
           <div className="flex items-center gap-4 mb-6">
             <Button asChild size="lg" className="bg-indigo-600 hover:bg-indigo-700">
               <Link
-                href={`https://wa.me/123456789?text=Me%20interesa%20el%20producto%20${encodeURIComponent(product.name)}`}
+                href={`https://wa.me/573116370334?text=Me%20interesa%20el%20producto%20${encodeURIComponent(product.name)}`}
                 target="_blank"
               >
                 Consultar por WhatsApp
@@ -114,7 +114,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 className="justify-start text-left h-auto py-2 hover:bg-indigo-100 hover:text-indigo-700"
               >
                 <Link
-                  href={`https://wa.me/123456789?text=¿Este%20producto%20es%20adecuado%20para%20cachorros?`}
+                  href={`https://wa.me/573116370334?text=¿Este%20producto%20es%20adecuado%20para%20cachorros?`}
                   target="_blank"
                 >
                   ¿Este producto es adecuado para cachorros?
@@ -125,7 +125,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 variant="ghost"
                 className="justify-start text-left h-auto py-2 hover:bg-indigo-100 hover:text-indigo-700"
               >
-                <Link href={`https://wa.me/123456789?text=¿Cuánto%20tiempo%20dura%20este%20producto?`} target="_blank">
+                <Link href={`https://wa.me/573116370334?text=¿Cuánto%20tiempo%20dura%20este%20producto?`} target="_blank">
                   ¿Cuánto tiempo dura este producto?
                 </Link>
               </Button>
@@ -135,7 +135,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 className="justify-start text-left h-auto py-2 hover:bg-indigo-100 hover:text-indigo-700"
               >
                 <Link
-                  href={`https://wa.me/123456789?text=¿Tienen%20disponibilidad%20inmediata%20de%20este%20producto?`}
+                  href={`https://wa.me/573116370334?text=¿Tienen%20disponibilidad%20inmediata%20de%20este%20producto?`}
                   target="_blank"
                 >
                   ¿Tienen disponibilidad inmediata?

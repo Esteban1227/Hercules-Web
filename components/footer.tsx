@@ -19,7 +19,7 @@ export default function Footer() {
                   className="object-contain"
                 />
               </div>
-              <span className="text-xl font-bold">PetCare</span>
+              <span className="text-xl font-bold">Veterinaria Hercules</span>
             </div>
             <p className="text-indigo-100 mb-4">
               Clínica veterinaria comprometida con la salud y bienestar de tus mascotas. Ofrecemos servicios
@@ -32,7 +32,7 @@ export default function Footer() {
                 variant="ghost"
                 className="rounded-full text-white hover:text-indigo-900 hover:bg-white"
               >
-                <Link href="https://facebook.com" target="_blank">
+                <Link href="https://www.facebook.com/clinicaveterinariahercules24horas" target="_blank">
                   <Facebook className="h-5 w-5" />
                   <span className="sr-only">Facebook</span>
                 </Link>
@@ -43,7 +43,7 @@ export default function Footer() {
                 variant="ghost"
                 className="rounded-full text-white hover:text-indigo-900 hover:bg-white"
               >
-                <Link href="https://instagram.com" target="_blank">
+                <Link href="https://www.instagram.com/clinicaveterinariahercules/" target="_blank">
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
                 </Link>
@@ -54,9 +54,9 @@ export default function Footer() {
                 variant="ghost"
                 className="rounded-full text-white hover:text-indigo-900 hover:bg-white"
               >
-                <Link href="https://twitter.com" target="_blank">
+                <Link href="https://www.tiktok.com/@veterinariaherculescali" target="_blank">
                   <Twitter className="h-5 w-5" />
-                  <span className="sr-only">Twitter</span>
+                  <span className="sr-only">TikTok</span>
                 </Link>
               </Button>
             </div>
@@ -132,12 +132,12 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-indigo-300 mt-0.5" />
-                <span className="text-indigo-100">Av. Principal 123, Ciudad</span>
+                <span className="text-indigo-100">Av. 2b norte # 73a -26, Cali</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-indigo-300" />
-                <Link href="tel:+123456789" className="text-indigo-100 hover:text-white transition-colors">
-                  +123 456 7890
+                <Link href="573116370334" className="text-indigo-100 hover:text-white transition-colors">
+                  +57 311 637 0334
                 </Link>
               </li>
               <li className="flex items-center gap-3">
@@ -152,9 +152,8 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Clock className="h-5 w-5 text-indigo-300 mt-0.5" />
                 <div className="text-indigo-100">
-                  <p>Lun-Vie: 9am-7pm</p>
-                  <p>Sáb: 9am-2pm</p>
-                  <p>Dom: Cerrado</p>
+                  <p>Lun-Sab: 8am-10pm</p>
+                  <p>Dom: 9am-6pm</p>
                 </div>
               </li>
             </ul>
@@ -163,12 +162,12 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-indigo-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-indigo-100 text-sm">
-            © {new Date().getFullYear()} Veterinaria PetCare. Todos los derechos reservados.
+            © {new Date().getFullYear()} Veterinaria Hercules. Todos los derechos reservados.
           </p>
 
           <div className="flex items-center gap-2">
             <Link
-              href="https://google.com/maps"
+              href="https://www.google.com/search?sca_esv=cd2e0a442ffc9e64&rlz=1C1VDKB_esCO1018CO1018&sxsrf=AHTn8zrX9cvhsX4IUEPecz-a52N9SAFLpA:1745965460277&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzdrL-pw0zeUYMH152WGI8kOwRSFCAvlLyyksIHEymx62cHa_QNTEtWOZWgKW8Br6HqICUvcdTqrwRCG-Z-zXbTmAhKyjEvMXzd-U_9b-32-e0y1o-1eXfKRwKwtS37nNj-sC-eI%3D&q=Cl%C3%ADnica+Veterinaria+H%C3%A9rcules+Opiniones&sa=X&ved=2ahUKEwid-rKYpP6MAxUZQzABHbjSE_0Q0bkNegQIIRAD&biw=1366&bih=599&dpr=1"
               target="_blank"
               className="flex items-center gap-1 text-indigo-100 hover:text-white transition-colors"
             >

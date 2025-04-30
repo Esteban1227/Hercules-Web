@@ -32,7 +32,7 @@ export default function Header() {
                   className="object-contain"
                 />
               </div>
-              <span className="text-xl font-bold text-indigo-700">PetCare</span>
+              <span className="text-xl font-bold text-indigo-700">Veterinaria Hercules</span>
             </Link>
           </div>
 
@@ -46,7 +46,7 @@ export default function Header() {
 
           <div className="hidden md:flex items-center gap-4">
             <Button asChild size="sm" className="bg-green-500 hover:bg-green-600">
-              <Link href="https://wa.me/123456789" target="_blank" className="flex items-center gap-1">
+              <Link href="https://wa.me/573116370334" target="_blank" className="flex items-center gap-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -105,7 +105,7 @@ export default function Header() {
                 <div className="mt-6">
                   <Button asChild className="w-full bg-green-500 hover:bg-green-600">
                     <Link
-                      href="https://wa.me/123456789"
+                      href="https://wa.me/573116370334"
                       target="_blank"
                       className="flex items-center justify-center gap-2"
                     >
