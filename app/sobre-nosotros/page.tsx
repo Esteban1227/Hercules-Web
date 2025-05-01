@@ -132,61 +132,61 @@ export default function SobreNosotros() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ServiceCard
             title="Consulta General y especializada"
-            description="Ofrecemos atención veterinaria integral, tanto preventiva como de diagnóstico y tratamiento, adaptada a las necesidades específicas de cada mascota."
+            description="Atención preventiva, diagnóstica y de tratamiento adaptada a cada necesidad."
             icon="stethoscope"
             expanded
           />
           <ServiceCard
             title="Vacunación y desparasitacion"
-            description="Aseguramos la protección de tu mascota contra enfermedades comunes, mediante un esquema de vacunación completo y un programa de desparasitación efectivo."
+            description="Planes efectivos para mantener a tu mascota protegida y saludable."
             icon="syringe"
             expanded
           />
           <ServiceCard
-            title="Cirugías programadas y de emergencia"
-            description="Realizamos intervenciones quirúrgicas tanto planificadas como de urgencia, con un enfoque profesional y en un ambiente controlado y seguro."
+            title="Cirugías"
+            description="Intervenciones programadas o de emergencia, con equipos profesionales y seguros."
             icon="scissors"
             expanded
           />
           <ServiceCard
-            title="Diagnóstico por imagen (ecografías y radiografías)"
-            description="Disponemos de tecnología avanzada para obtener imágenes precisas, esenciales para un diagnóstico detallado de la salud de tu mascota."
+            title="Diagnóstico por imagen"
+            description=" Ecografías y radiografías con tecnología avanzada para diagnósticos precisos."
             icon="flask"
             expanded
           />
           <ServiceCard
             title="Laboratorio clínico"
-            description="Realizamos pruebas de laboratorio para obtener diagnósticos rápidos y confiables, permitiendo un tratamiento oportuno y adecuado."
+            description="Pruebas rápidas y confiables para tratamientos oportunos."
             icon="flask"
             expanded
           />
            <ServiceCard
             title="Profilaxis dental"
-            description="Ofrecemos limpieza y cuidado dental para prevenir enfermedades bucodentales, mejorando la salud general de tu mascota."
+            description="Limpieza y cuidado bucal para prevenir enfermedades dentales."
             icon="scissors"
             expanded
           />
           <ServiceCard
             title="Peluquería y baño"
-            description="Servicios de corte de pelo, baño y cuidado estético realizados por profesionales, garantizando el bienestar y la higiene de tu mascota."
+            description="Higiene y estética a cargo de profesionales."
             icon="scissors"
             expanded
           />
           <ServiceCard
             title="Tienda"
-            description="Disponemos de una amplia gama de alimentos y productos especializados para el cuidado y la nutrición de tu mascota, seleccionados por su calidad y efectividad."
+            description="Alimentos y productos seleccionados para el cuidado diario de tu mascota."
             icon="shopping-bag"
             expanded
           />
           <ServiceCard
             title="Hospitalización y cuidados intensivos"
-            description="Atención continua y personalizada para mascotas que requieren observación constante o tratamientos prolongados, garantizando su bienestar en todo momento."
+            description="Supervisión constante para casos que requieren atención especial."
             icon="hospital"
             expanded
           />
           <ServiceCard
             title="Emergencias"
-            description="Servicio de urgencias veterinarias, ofreciendo atención inmediata para situaciones críticas que requieren intervención rápida y profesional."
+            description="Atención inmediata en situaciones críticas."
             icon="alert-circle"
             expanded
           />
