@@ -1,3 +1,5 @@
+
+"use client";
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
@@ -5,8 +7,12 @@ import Link from "next/link"
 import { MapPin, Clock, Phone, Star } from "lucide-react"
 import ServiceCard from "@/components/service-card"
 import ContactSection from "@/components/contact-section"
+import { useState, useEffect } from "react";
+
+
 
 export default function Home() {
+
   return (
     <div className="container mx-auto px-4">
       {/* Hero Section */}
@@ -98,32 +104,32 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ServiceCard
             title="Consultas generales y especializadas"
-            description="Ofrecemos atención veterinaria integral, tanto preventiva como de diagnóstico y tratamiento, adaptada a las necesidades específicas de cada mascota."
+            description="Atención preventiva, diagnóstica y de tratamiento adaptada a cada necesidad."
             icon="stethoscope"
           />
           <ServiceCard
             title="Vacunación y desparasitación"
-            description="Aseguramos la protección de tu mascota contra enfermedades comunes, mediante un esquema de vacunación completo y un programa de desparasitación efectivo."
+            description="Planes efectivos para mantener a tu mascota protegida y saludable."
             icon="syringe"
           />
           <ServiceCard
-            title="Cirugías programadas y de emergencia"
-            description="Realizamos intervenciones quirúrgicas tanto planificadas como de urgencia, con un enfoque profesional y en un ambiente controlado y seguro."
+            title="Cirugías"
+            description="Intervenciones programadas o de emergencia, con equipos profesionales y seguros."
             icon="scissors"
           />
           <ServiceCard 
           title="Laboratorio Clinico" 
-          description="Realizamos pruebas de laboratorio para obtener diagnósticos rápidos y confiables, permitiendo un tratamiento oportuno y adecuado" 
+          description="Pruebas rápidas y confiables para tratamientos oportunos." 
           icon="flask" />
 
           <ServiceCard
             title="Peluquería y baño medicado"
-            description="Servicios de corte de pelo, baño y cuidado estético realizados por profesionales, garantizando el bienestar y la higiene de tu mascota."
+            description="Higiene y estética a cargo de profesionales."g
             icon="scissors"
           />
           <ServiceCard
             title="Tienda"
-            description="Disponemos de una amplia gama de alimentos y productos especializados para el cuidado y la nutrición de tu mascota, seleccionados por su calidad y efectividad"
+            description="Alimentos y productos seleccionados para el cuidado diario de tu mascota."
             icon="shopping-bag"
           />
         </div>
