@@ -272,17 +272,17 @@ export default function Contacto() {
           </Card>
           <Card>
             <CardContent className="p-6">
-              <h3 className="font-medium text-lg text-indigo-700 mb-2">¿Atienden animales exóticos o solo perros y gatos?</h3>
+              <h3 className="font-medium text-lg text-indigo-700 mb-2">¿Cada cuento debo desparasitar a mi mascota?</h3>
               <p className="text-gray-600">
-                No, actualmente solo atendemos perros y gatos. Nos enfocamos en brindarles la mejor atención posible, con servicios especializados y personalizados para ellos.
+                La desparasitacion se debe dar siempre cada 3 meses.
               </p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="p-6">
-              <h3 className="font-medium text-lg text-indigo-700 mb-2">¿Realizan visitas a domicilio?</h3>
+              <h3 className="font-medium text-lg text-indigo-700 mb-2">¿Despues de cuantos meses de nacido puedo esterilizar mi mascota?</h3>
               <p className="text-gray-600">
-                No, por el momento no ofrecemos servicio a domicilio. Atendemos con gusto en nuestra clínica, donde contamos con todo lo necesario para brindarle a tu mascota el mejor cuidado.
+                La esterilización se puede realizar a partir de los 7 meses, tanto en perros como en gatos, antes del primer celo en hembras o cuando ya han alcanzado un desarrollo adecuado.
               </p>
             </CardContent>
           </Card>

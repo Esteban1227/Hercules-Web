@@ -97,7 +97,7 @@ export default function SobreNosotros() {
 
         <TabsContent value="equipo" className="mt-6">
           <h2 className="text-2xl font-semibold text-indigo-700 mb-6 text-center">Nuestro Equipo Profesional</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6" >
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {Veterinarians.map((miembro, index) => (
               <Card key={index} className="text-center">
                 <CardContent className="p-6">

@@ -10,8 +10,24 @@ import ContactSection from "@/components/contact-section"
 import { useState, useEffect } from "react";
 
 
-
 export default function Home() {
+
+  const images = [
+    "/img1.jpg",
+    "/img2.jpg",
+    "/img3.jpg",
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Cambia cada 5 segundos
+
+    return () => clearInterval(interval);
+  }, []);
+
 
   return (
     <div className="container mx-auto px-4">
@@ -42,10 +58,11 @@ export default function Home() {
           </div>
           <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=400&width=600"
-              alt="Veterinario con mascota"
+              key={currentIndex} // Para forzar la transición de imagen
+              src={images[currentIndex]}
+              alt={`Imagen ${currentIndex + 1}`}
               fill
-              className="object-cover"
+              className="object-cover transition-opacity duration-1000"
             />
           </div>
         </div>
@@ -124,7 +141,7 @@ export default function Home() {
 
           <ServiceCard
             title="Peluquería y baño medicado"
-            description="Higiene y estética a cargo de profesionales."g
+            description="Higiene y estética a cargo de profesionales."
             icon="scissors"
           />
           <ServiceCard
