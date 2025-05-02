@@ -81,7 +81,7 @@ export default function Header() {
                         className="object-contain"
                       />
                     </div>
-                    <span className="text-xl font-bold text-indigo-700">PetCare</span>
+                    <span className="text-xl font-bold text-indigo-700">Veterinaria Hercules</span>
                   </Link>
                   <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
                     <X className="h-5 w-5" />
@@ -129,8 +129,8 @@ export default function Header() {
                     <div className="flex items-center gap-3">
                       <Clock className="h-5 w-5 text-indigo-600" />
                       <div className="text-gray-600">
-                        <p>Lun-Vie: 9am-7pm</p>
-                        <p>Sáb: 9am-2pm</p>
+                        <p>Lunes-Sabado: 8am-10pm</p>
+                        <p>Domingo-Festivos : 9am-6pm</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -140,7 +140,7 @@ export default function Header() {
                         target="_blank"
                         className="text-gray-600 hover:text-indigo-600"
                       >
-                        Av. Principal 123, Ciudad
+                        Av. 2b norte # 73a -26, Cali
                       </Link>
                     </div>
                   </div>
