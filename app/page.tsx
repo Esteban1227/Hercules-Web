@@ -69,7 +69,7 @@ export default function Home() {
       </section>
 
       {/* Quick Info Section */}
-      <section className="py-8 bg-indigo-50 rounded-lg mb-12">
+      <section className="py-8 px-8 bg-indigo-50 rounded-lg mb-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card className="border-none shadow-sm bg-white">
             <CardContent className="flex items-center gap-4 p-6">
@@ -122,32 +122,32 @@ export default function Home() {
           <ServiceCard
             title="Consultas generales y especializadas"
             description="Atención preventiva, diagnóstica y de tratamiento adaptada a cada necesidad."
-            icon="stethoscope"
+            imageUrl="/placeholder.svg?height=200&width=300"
           />
           <ServiceCard
             title="Vacunación y desparasitación"
             description="Planes efectivos para mantener a tu mascota protegida y saludable."
-            icon="syringe"
+            imageUrl="/placeholder.svg?height=200&width=300"
           />
           <ServiceCard
             title="Cirugías"
             description="Intervenciones programadas o de emergencia, con equipos profesionales y seguros."
-            icon="scissors"
+            imageUrl="/placeholder.svg?height=200&width=300"
           />
           <ServiceCard 
           title="Laboratorio Clinico" 
           description="Pruebas rápidas y confiables para tratamientos oportunos." 
-          icon="flask" />
+          imageUrl="/placeholder.svg?height=200&width=300" />
 
           <ServiceCard
             title="Peluquería y baño medicado"
             description="Higiene y estética a cargo de profesionales."
-            icon="scissors"
+           imageUrl="/placeholder.svg?height=200&width=300"
           />
           <ServiceCard
             title="Tienda"
             description="Alimentos y productos seleccionados para el cuidado diario de tu mascota."
-            icon="shopping-bag"
+            imageUrl="/placeholder.svg?height=200&width=300"
           />
         </div>
 

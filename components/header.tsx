@@ -24,15 +24,14 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-2">
-              <div className="relative h-10 w-10">
+              <div className="relative h-20 w-20">
                 <Image
-                  src="/placeholder.svg?height=40&width=40"
+                  src="/LogoHercules.png"
                   alt="Veterinaria PetCare Logo"
                   fill
                   className="object-contain"
                 />
               </div>
-              <span className="text-xl font-bold text-indigo-700">Veterinaria Hercules</span>
             </Link>
           </div>
 

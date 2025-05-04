@@ -1,56 +1,25 @@
 import { Card, CardContent } from "@/components/ui/card"
-import {
-  Stethoscope,
-  Syringe,
-  Scissors,
-  FlaskRoundIcon as Flask,
-  ShoppingBag,
-  SmileIcon as Tooth,
-  Hospital,
-  AlertCircle,
-} from "lucide-react"
+import Image from "next/image"
 
 interface ServiceCardProps {
   title: string
   description: string
-  icon: string
+  imageUrl: string
   expanded?: boolean
 }
 
-export default function ServiceCard({ title, description, icon, expanded = false }: ServiceCardProps) {
-  const getIcon = () => {
-    switch (icon) {
-      case "stethoscope":
-        return <Stethoscope className="h-6 w-6 text-indigo-600" />
-      case "syringe":
-        return <Syringe className="h-6 w-6 text-indigo-600" />
-      case "scissors":
-        return <Scissors className="h-6 w-6 text-indigo-600" />
-      case "flask":
-        return <Flask className="h-6 w-6 text-indigo-600" />
-      case "shopping-bag":
-        return <ShoppingBag className="h-6 w-6 text-indigo-600" />
-      case "tooth":
-        return <Tooth className="h-6 w-6 text-indigo-600" />
-      case "hospital":
-        return <Hospital className="h-6 w-6 text-indigo-600" />
-      case "alert-circle":
-        return <AlertCircle className="h-6 w-6 text-indigo-600" />
-      default:
-        return <Stethoscope className="h-6 w-6 text-indigo-600" />
-    }
-  }
-
+export default function ServiceCard({ title, description, imageUrl, expanded = false }: ServiceCardProps) {
   return (
-    <Card className={`border-none shadow-sm transition-all ${expanded ? "" : "hover:shadow-md"}`}>
-      <CardContent className="p-6">
-        <div className="flex items-start gap-4">
-          <div className="bg-indigo-100 p-3 rounded-full">{getIcon()}</div>
-          <div>
-            <h3 className="font-medium text-gray-900 mb-2">{title}</h3>
-            <p className="text-gray-600">{description}</p>
-          </div>
+    <Card className={`border-none shadow-sm transition-all overflow-hidden ${expanded ? "" : "hover:shadow-md"}`}>
+      <div className="relative h-48 w-full">
+        <Image src={imageUrl || "/placeholder.svg?height=200&width=300"} alt={title} fill className="object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        <div className="absolute bottom-0 left-0 p-4 w-full">
+          <h3 className="font-medium text-white text-lg mb-1">{title}</h3>
         </div>
+      </div>
+      <CardContent className="p-4">
+        <p className="text-gray-600">{description}</p>
       </CardContent>
     </Card>
   )
