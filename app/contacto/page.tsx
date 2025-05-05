@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { MapPin, Clock, Star } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import SuggestionForm from "@/components/suggestion-form"
 
 export default function Contacto() {
   return (
@@ -94,142 +95,26 @@ export default function Contacto() {
         </Card>
       </div>
 
-      {/* WhatsApp Contact Options */}
-      <div className="mb-16">
-        <h2 className="text-2xl font-bold text-indigo-800 mb-6 text-center">Contáctanos por WhatsApp</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-          <Button asChild variant="outline" className="h-auto py-4 justify-start text-left">
-            <Link
-              href="https://wa.me/573116370334?text=Hola,%20quisiera%20agendar%20una%20cita%20para%20mi%20mascota"
-              target="_blank"
-              className="flex items-start gap-3"
-            >
-              <div className="bg-green-100 p-2 rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-green-600"
-                >
-                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
-                  <line x1="16" x2="16" y1="2" y2="6" />
-                  <line x1="8" x2="8" y1="2" y2="6" />
-                  <line x1="3" x2="21" y1="10" y2="10" />
-                  <path d="M8 14h.01" />
-                  <path d="M12 14h.01" />
-                  <path d="M16 14h.01" />
-                  <path d="M8 18h.01" />
-                  <path d="M12 18h.01" />
-                  <path d="M16 18h.01" />
-                </svg>
-              </div>
-              <div>
-                <span className="font-medium block mb-1">Agendar recogida de tu mascota</span>
-                <span className="text-sm text-gray-500">Para baño y peluqueria</span>
-              </div>
-            </Link>
-          </Button>
-
-          <Button asChild variant="outline" className="h-auto py-4 justify-start text-left">
-            <Link
-              href="https://wa.me/573116370334?text=Hola,%20quisiera%20información%20sobre%20los%20servicios%20de%20la%20veterinaria"
-              target="_blank"
-              className="flex items-start gap-3"
-            >
-              <div className="bg-green-100 p-2 rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-green-600"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                  <path d="M12 17h.01" />
-                </svg>
-              </div>
-              <div>
-                <span className="font-medium block mb-1">Información general</span>
-                <span className="text-sm text-gray-500">Sobre nuestros servicios y productos</span>
-              </div>
-            </Link>
-          </Button>
-
-          <Button asChild variant="outline" className="h-auto py-4 justify-start text-left">
-            <Link
-              href="https://wa.me/573116370334?text=Hola,%20quisiera%20consultar%20sobre%20los%20precios%20de%20los%20servicios"
-              target="_blank"
-              className="flex items-start gap-3"
-            >
-              <div className="bg-green-100 p-2 rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-green-600"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 8h.01" />
-                  <path d="M11 12h1v4h1" />
-                </svg>
-              </div>
-              <div>
-                <span className="font-medium block mb-1">Consultar precios</span>
-                <span className="text-sm text-gray-500">Tarifas de servicios y productos</span>
-              </div>
-            </Link>
-          </Button>
-
-          <Button asChild variant="outline" className="h-auto py-4 justify-start text-left">
-            <Link
-              href="https://wa.me/573116370334?text=Hola,%20tengo%20una%20emergencia%20con%20mi%20mascota"
-              target="_blank"
-              className="flex items-start gap-3"
-            >
-              <div className="bg-green-100 p-2 rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-green-600"
-                >
-                  <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2" />
-                  <path d="M12 8v4" />
-                  <path d="M12 16h.01" />
-                </svg>
-              </div>
-              <div>
-                <span className="font-medium block mb-1">Emergencias</span>
-                <span className="text-sm text-gray-500">Atención urgente para tu mascota</span>
-              </div>
-            </Link>
-          </Button>
+      {/* Suggestion Box Section */}
+      <section className="mb-16 bg-indigo-50 rounded-lg p-8">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl font-bold text-indigo-800 mb-4">Buzón de Sugerencias</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Tu opinión es muy importante para nosotros. Ayúdanos a mejorar nuestros servicios compartiendo tus ideas,
+            comentarios o sugerencias.
+          </p>
         </div>
-      </div>
+
+        <div className="max-w-2xl mx-auto">
+          <SuggestionForm />
+
+          <div className="mt-6 text-center">
+            <p className="text-sm text-gray-500">
+              Gracias por ayudarnos a mejorar. Valoramos todas las sugerencias y las revisamos periódicamente.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Map Section */}
       <section className="mb-16">
@@ -244,18 +129,18 @@ export default function Contacto() {
             style={{ border: 0 }}
             className="absolute top-0 left-0 w-full h-full"
           ></iframe>
-        <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-          <Link
-            href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+H%C3%A9rcules/@3.492575,-76.5062012,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a997aa17475f:0xd88bb2d00e4d12be!8m2!3d3.4925696!4d-76.5036263!16s%2Fg%2F11k51ggr95?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">
-              Abrir en Google Maps
-            </button>
-          </Link>
+          <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+            <Link
+              href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+H%C3%A9rcules/@3.492575,-76.5062012,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a997aa17475f:0xd88bb2d00e4d12be!8m2!3d3.4925696!4d-76.5036263!16s%2Fg%2F11k51ggr95?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">
+                Abrir en Google Maps
+              </button>
+            </Link>
+          </div>
         </div>
-      </div>
       </section>
 
       {/* FAQ Section */}
@@ -266,7 +151,7 @@ export default function Contacto() {
             <CardContent className="p-6">
               <h3 className="font-medium text-lg text-indigo-700 mb-2">¿Necesito cita previa para una consulta?</h3>
               <p className="text-gray-600">
-                No, en la clínica veterinaria hércules no necesitas pedir cita previa. Atendemos a tu peludito por orden de llegada, con el cariño y la dedicación que se merece. 
+                No, en la clínica veterinaria hércules no necesitas pedir cita previa. Atendemos a tu peludito por orden de llegada, con el cariño y la dedicación que se merece.
               </p>
             </CardContent>
           </Card>
@@ -348,7 +233,7 @@ export default function Contacto() {
                     <div className="w-2 h-2 rounded-full bg-indigo-600"></div>
                   </div>
                   <p className="text-gray-600">
-                    Para urgencias fuera del horario regular, contactanos al numero de celular 311 637 0334 
+                    Para urgencias fuera del horario regular, contactanos al numero de celular 311 637 0334
 
                   </p>
                 </li>
