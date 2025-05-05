@@ -18,15 +18,15 @@ export default function ProductPage({ params }: ProductPageProps) {
   // En un caso real, aquí se obtendría la información del producto desde una API o base de datos
   const product = {
     id: productId,
-    name: `Producto Monello Gato Adulto 1 kg`,
+    name: `Producto Hills Adulto Razas pequeñas 2 kg`,
     description: "Producto de alta calidad para el cuidado y bienestar de tu mascota.",
     longDescription:
-      " Monello también ofrece alimentos secos de alta calidad para gatos, formulados con proteínas nobles, vegetales y cereales funcionales. Incluye prebióticos, omega 3 y 6, y extracto de yuca para controlar el olor de las heces. Es una excelente opción para quienes buscan una nutrición equilibrada con buen rendimiento. Disponible en presentaciones para gato adulto, castrado, con bola de pelo y gatito.",
+      "Hill’s es una marca reconocida por sus fórmulas científicamente desarrolladas para perros con necesidades nutricionales específicas. Su línea Prescription Diet incluye productos para el manejo de problemas renales, digestivos, urinarios, articulares, de peso y más. Ofrece alta calidad veterinaria, ideal para el manejo clínico mediante la alimentación.",
     specifications: [
-      "Presentaciones: 1 kg y 7 kg",
+      "Presentaciones: 2 kg ",
   
     ],
-    images: Array(1).fill(`/img-productos/monello-gato.jpg?height=600&width=600`),
+    images: Array(1).fill(`/img-productos/hills.jpg?height=600&width=600`),
   }
 
   // Productos relacionados
