@@ -5,14 +5,16 @@ import { Search } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import ContactSection from "@/components/contact-section"
+import alimentos from "@/data/alimentos"
+
 
 export default function Tienda() {
   // Categorías de productos
   const categories = [
     { id: "alimentos", name: "Alimentos" },
-    { id: "juguetes", name: "Juguetes" },
-    { id: "medicamentos", name: "Medicamentos" },
-    { id: "accesorios", name: "Accesorios" },
+    //{ id: "juguetes", name: "Juguetes" },
+    //{ id: "medicamentos", name: "Medicamentos" },
+    //{ id: "accesorios", name: "Accesorios" },
   ]
 
   // Productos de ejemplo para cada categoría
@@ -26,7 +28,7 @@ export default function Tienda() {
   }
 
   const productsByCategory = {
-    alimentos: generateProducts("alimentos", 8),
+    alimentos: alimentos,
     juguetes: generateProducts("juguetes", 6),
     medicamentos: generateProducts("medicamentos", 4),
     accesorios: generateProducts("accesorios", 6),
@@ -116,17 +118,17 @@ function ProductCard({ product }: { product: Product }) {
   return (
     <Card className="h-full transition-all hover:shadow-md relative">
       <Link href={`/tienda/${product.id}`} className="block">
-        <div className="relative h-48 w-full">
+        <div className="relative w-full h-48">
           <Image
-            src={product.image || "/placeholder.svg"}
-            alt={product.name}
-            fill
-            className="object-cover rounded-t-lg"
+             src={product.image || "/placeholder.svg"}
+             alt={product.name}
+             layout="fill"  // Utiliza 'fill' para que la imagen llene todo el contenedor
+             className="object-contain rounded-t-lg" // Ajusta la imagen sin recortarla
           />
         </div>
-        <CardContent className="p-4 pb-14">
+        <CardContent className="p-4 pb-14 text-center">
           <h3 className="font-medium text-gray-900 mb-2">{product.name}</h3>
-          <p className="text-gray-600 text-sm mb-3">{product.description}</p>
+          
         </CardContent>
       </Link>
       <div className="absolute bottom-4 left-4 right-4"></div>

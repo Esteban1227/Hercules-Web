@@ -63,6 +63,7 @@ export default function Contacto() {
             <h3 className="font-medium text-lg mb-2">Dirección</h3>
             <p className="text-gray-600 mb-4">Visítanos en nuestra clínica</p>
             <p className="text-gray-600">Av 2b norte # 73a -26 , Cali</p>
+            <p className="text-gray-600">Brisas de los Alamos</p>
             <Link href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+H%C3%A9rcules/@3.492575,-76.5062012,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a997aa17475f:0xd88bb2d00e4d12be!8m2!3d3.4925696!4d-76.5036263!16s%2Fg%2F11k51ggr95?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D" target="_blank" className="text-indigo-600 hover:underline text-sm">
               Ver en Google Maps
             </Link>
@@ -78,6 +79,7 @@ export default function Contacto() {
             <p className="text-gray-600 mb-4">Estamos para atenderte</p>
             <p className="text-gray-600">Lun-Sab: 8am-10pm</p>
             <p className="text-gray-600">Dom: 9am-6pm</p>
+            <p className="text-gray-600">Urgencias 24 horas</p>
           </CardContent>
         </Card>
 
@@ -185,6 +187,8 @@ export default function Contacto() {
       {/* Business Hours Section */}
       <section className="mb-16">
         <h2 className="text-2xl font-bold text-indigo-800 mb-6">Horario de Atención</h2>
+        <p className="mb-2">
+                Urgencias 24 Horas</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card>
             <CardContent className="p-6">
@@ -219,6 +223,7 @@ export default function Contacto() {
                     <td className="py-3 font-medium">Domingo</td>
                     <td className="py-3 text-right">9:00 AM - 6:00 PM</td>
                   </tr>
+                  
                 </tbody>
               </table>
             </CardContent>

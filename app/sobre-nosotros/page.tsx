@@ -43,7 +43,7 @@ export default function SobreNosotros() {
               </p>
             </div>
             <div className="relative h-[300px] rounded-lg overflow-hidden">
-              <Image src="/about-us.jpg" alt="Nuestra clínica" fill className="object-cover" />
+              <Image src="/img-sobre-nosotros/hercules.jpg" alt="Nuestra clínica" fill className="object-contain" />
             </div>
           </div>
         </TabsContent>
@@ -97,7 +97,7 @@ export default function SobreNosotros() {
 
         <TabsContent value="equipo" className="mt-6">
           <h2 className="text-2xl font-semibold text-indigo-700 mb-6 text-center">Nuestro Equipo Profesional</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
             {Veterinarians.map((miembro, index) => (
               <Card key={index} className="text-center">
                 <CardContent className="p-6">
@@ -133,61 +133,61 @@ export default function SobreNosotros() {
           <ServiceCard
             title="Consulta General y especializada"
             description="Atención preventiva, diagnóstica y de tratamiento adaptada a cada necesidad."
-            icon="stethoscope"
+            imageUrl="/img-pagina-principal/consulta.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Vacunación y desparasitacion"
             description="Planes efectivos para mantener a tu mascota protegida y saludable."
-            icon="syringe"
+            imageUrl="/img-pagina-principal/desparasitacion.avif?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Cirugías"
             description="Intervenciones programadas o de emergencia, con equipos profesionales y seguros."
-            icon="scissors"
+            imageUrl="/img-pagina-principal/cirugia.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Diagnóstico por imagen"
             description=" Ecografías y radiografías con tecnología avanzada para diagnósticos precisos."
-            icon="flask"
+            imageUrl="/img-pagina-principal/consulta.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Laboratorio clínico"
             description="Pruebas rápidas y confiables para tratamientos oportunos."
-            icon="flask"
+            imageUrl="/img-pagina-principal/laboratorio.jpg?height=200&width=300"
             expanded
           />
            <ServiceCard
             title="Profilaxis dental"
             description="Limpieza y cuidado bucal para prevenir enfermedades dentales."
-            icon="scissors"
+            imageUrl="/img-pagina-principal/consulta.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Peluquería y baño"
             description="Higiene y estética a cargo de profesionales."
-            icon="scissors"
+            imageUrl="/img-pagina-principal/baño.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Tienda"
             description="Alimentos y productos seleccionados para el cuidado diario de tu mascota."
-            icon="shopping-bag"
+            imageUrl="/img-pagina-principal/tienda.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Hospitalización y cuidados intensivos"
             description="Supervisión constante para casos que requieren atención especial."
-            icon="hospital"
+            imageUrl="/img-pagina-principal/consulta.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Emergencias"
             description="Atención inmediata en situaciones críticas."
-            icon="alert-circle"
+            imageUrl="/img-pagina-principal/consulta.jpg?height=200&width=300"
             expanded
           />
         </div>

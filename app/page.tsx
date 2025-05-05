@@ -13,9 +13,7 @@ import { useState, useEffect } from "react";
 export default function Home() {
 
   const images = [
-    "/img1.jpg",
-    "/img2.jpg",
-    "/img3.jpg",
+    "/img-pagina-principal/about-us.jpg"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,7 +37,7 @@ export default function Home() {
               Cuidamos de tus mascotas como si fueran nuestras
             </h1>
             <p className="text-lg text-gray-600 mb-6">
-              En Veterinaria Hercules ofrecemos atención médica de calidad, productos especializados y todo lo que tu
+              En la Clinica Veterinaria Hercules ofrecemos atención médica de calidad, productos especializados y todo lo que tu
               mascota necesita.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -78,7 +76,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-medium text-gray-900">Horario de atención</h3>
-                <p className="text-gray-600">Lun-Sab: 8am-10pm | Dom: 9am-6pm</p>
+                <p className="text-gray-600">Lun-Sab: 8am-10pm | Dom: 9am-6pm Urgencias 24 horas</p>
               </div>
             </CardContent>
           </Card>
@@ -90,7 +88,8 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-medium text-gray-900">Contacto</h3>
-                <p className="text-gray-600">+57 311 637 0334</p>
+                <p className="text-gray-600">+57 311 637 0334<br />
+                +57 313 748 0706 </p>
               </div>
             </CardContent>
           </Card>
@@ -102,7 +101,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-medium text-gray-900">Ubicación</h3>
-                <p className="text-gray-600">Av. 2b norte # 73a -26, Cali</p>
+                <p className="text-gray-600">Av. 2b norte # 73a -26, Cali<br /> Brisas de los Alamos</p>
               </div>
             </CardContent>
           </Card>
@@ -122,32 +121,32 @@ export default function Home() {
           <ServiceCard
             title="Consultas generales y especializadas"
             description="Atención preventiva, diagnóstica y de tratamiento adaptada a cada necesidad."
-            imageUrl="/placeholder.svg?height=200&width=300"
+            imageUrl="/img-pagina-principal/consulta.jpg?height=200&width=300"
           />
           <ServiceCard
             title="Vacunación y desparasitación"
             description="Planes efectivos para mantener a tu mascota protegida y saludable."
-            imageUrl="/placeholder.svg?height=200&width=300"
+            imageUrl="/img-pagina-principal/desparasitacion.avif?height=200&width=300"
           />
           <ServiceCard
             title="Cirugías"
             description="Intervenciones programadas o de emergencia, con equipos profesionales y seguros."
-            imageUrl="/placeholder.svg?height=200&width=300"
+            imageUrl="/img-pagina-principal/cirugia.jpg?height=200&width=300"
           />
           <ServiceCard 
           title="Laboratorio Clinico" 
           description="Pruebas rápidas y confiables para tratamientos oportunos." 
-          imageUrl="/placeholder.svg?height=200&width=300" />
+          imageUrl="/img-pagina-principal/laboratorio.jpg?height=200&width=300" />
 
           <ServiceCard
             title="Peluquería y baño medicado"
             description="Higiene y estética a cargo de profesionales."
-           imageUrl="/placeholder.svg?height=200&width=300"
+           imageUrl="/img-pagina-principal/baño.jpg?height=200&width=300"
           />
           <ServiceCard
             title="Tienda"
             description="Alimentos y productos seleccionados para el cuidado diario de tu mascota."
-            imageUrl="/placeholder.svg?height=200&width=300"
+            imageUrl="/img-pagina-principal/tienda.jpg?height=200&width=300"
           />
         </div>
 
