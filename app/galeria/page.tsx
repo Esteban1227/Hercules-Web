@@ -6,9 +6,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { X } from "lucide-react"
 import ContactSection from "@/components/contact-section"
+import galeria from "@/data/galeria"
 
 export default function Galeria() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
+  const { pacientes } = galeria
 
   // Imágenes de ejemplo para cada categoría
   const images = {
@@ -26,7 +28,7 @@ export default function Galeria() {
     })),
     pacientes: Array.from({ length: 10 }, (_, i) => ({
       id: `paciente-${i + 1}`,
-      src: "/placeholder.svg?height=400&width=600",
+      src:`/img-galeria/p${i + 1}.jpg`, // Ruta correcta
       alt: `Paciente ${i + 1}`,
       caption: `Nuestros adorables pacientes felices y saludables.`,
     })),
@@ -117,26 +119,26 @@ export default function Galeria() {
           </div>
         </TabsContent>
 
-        {/* Pacientes */}
-        <TabsContent value="pacientes">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {images.pacientes.map((image) => (
-              <button
-                key={image.id}
-                className="relative h-64 rounded-lg overflow-hidden cursor-pointer"
-                onClick={() => setSelectedImage(image.src)}
-              >
-                <Image
-                  src={image.src || "/placeholder.svg"}
-                  alt={image.alt}
-                  fill
-                  className="object-cover transition-transform hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-opacity" />
-              </button>
-            ))}
-          </div>
-        </TabsContent>
+              {/* Pacientes */}
+          <TabsContent value="pacientes">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {galeria.pacientes.map((image) => (
+                <button
+                  key={image.id}
+                  className="relative h-64 rounded-lg overflow-hidden cursor-pointer"
+                  onClick={() => setSelectedImage(image.src)}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover transition-transform hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-opacity" />
+                </button>
+              ))}
+            </div>
+      </TabsContent>
 
         {/* Videos */}
         <TabsContent value="videos">

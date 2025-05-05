@@ -18,18 +18,15 @@ export default function ProductPage({ params }: ProductPageProps) {
   // En un caso real, aquí se obtendría la información del producto desde una API o base de datos
   const product = {
     id: productId,
-    name: `Producto ${productId}`,
+    name: `Producto Monello Gato Adulto 1 kg`,
     description: "Producto de alta calidad para el cuidado y bienestar de tu mascota.",
     longDescription:
-      "Este producto premium está diseñado específicamente para satisfacer las necesidades de tu mascota. Fabricado con ingredientes de la más alta calidad y sometido a rigurosos controles, garantiza resultados óptimos y seguros. Recomendado por veterinarios y querido por las mascotas, este producto se ha convertido en un favorito entre nuestros clientes.",
+      " Monello también ofrece alimentos secos de alta calidad para gatos, formulados con proteínas nobles, vegetales y cereales funcionales. Incluye prebióticos, omega 3 y 6, y extracto de yuca para controlar el olor de las heces. Es una excelente opción para quienes buscan una nutrición equilibrada con buen rendimiento. Disponible en presentaciones para gato adulto, castrado, con bola de pelo y gatito.",
     specifications: [
-      "Material: Premium",
-      "Peso: 500g",
-      "Dimensiones: 20 x 15 x 5 cm",
-      "País de origen: España",
-      "Recomendado para: Todas las razas",
+      "Presentaciones: 1 kg y 7 kg",
+  
     ],
-    images: Array(5).fill("/placeholder.svg?height=600&width=600"),
+    images: Array(1).fill(`/img-productos/monello-gato.jpg?height=600&width=600`),
   }
 
   // Productos relacionados
@@ -117,7 +114,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                   href={`https://wa.me/573116370334?text=¿Este%20producto%20es%20adecuado%20para%20cachorros?`}
                   target="_blank"
                 >
-                  ¿Este producto es adecuado para cachorros?
+                  ¿Este producto es adecuado para gato esterilizado?
                 </Link>
               </Button>
               <Button
