@@ -11,13 +11,14 @@ export default function Footer() {
           {/* About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="relative h-10 w-10 bg-white rounded-full overflow-hidden">
+              <div className="relative h-20 w-20 bg-white rounded-full overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=40&width=40"
+                  src="/LogoHercules.png"
                   alt="Veterinaria PetCare Logo"
                   fill
                   className="object-contain"
                 />
+
               </div>
               <span className="text-xl font-bold">Veterinaria Hercules</span>
             </div>
@@ -55,7 +56,7 @@ export default function Footer() {
                 className="rounded-full text-white hover:text-indigo-900 hover:bg-white"
               >
                 <Link href="https://www.tiktok.com/@veterinariaherculescali" target="_blank">
-                  <Twitter className="h-5 w-5" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg>
                   <span className="sr-only">TikTok</span>
                 </Link>
               </Button>
@@ -100,7 +101,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/sobre-nosotros" className="text-indigo-100 hover:text-white transition-colors">
-                  Consulta 
+                  Consulta
                 </Link>
               </li>
               <li>
@@ -110,12 +111,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/sobre-nosotros" className="text-indigo-100 hover:text-white transition-colors">
-                  Cirugía 
+                  Cirugía
                 </Link>
               </li>
               <li>
                 <Link href="/sobre-nosotros" className="text-indigo-100 hover:text-white transition-colors">
-                  Diagnostico por imagen 
+                  Diagnostico por imagen
                 </Link>
               </li>
               <li>
