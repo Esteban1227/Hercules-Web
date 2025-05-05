@@ -52,13 +52,13 @@ export default function Galeria() {
         </p>
       </div>
 
-      <Tabs defaultValue="instalaciones" className="mb-16">
+      <Tabs defaultValue="pacientes" className="mb-16">
         <TabsList className="w-full flex flex-wrap justify-center mb-8 bg-transparent">
           <TabsTrigger
-            value="instalaciones"
+            value="pacientes"
             className="data-[state=active]:bg-indigo-100 data-[state=active]:text-indigo-800"
           >
-            Instalaciones
+            Pacientes
           </TabsTrigger>
           <TabsTrigger
             value="servicios"
@@ -67,10 +67,10 @@ export default function Galeria() {
             Servicios
           </TabsTrigger>
           <TabsTrigger
-            value="pacientes"
+            value="instalaciones"
             className="data-[state=active]:bg-indigo-100 data-[state=active]:text-indigo-800"
           >
-            Pacientes
+            Instalaciones
           </TabsTrigger>
           <TabsTrigger value="videos" className="data-[state=active]:bg-indigo-100 data-[state=active]:text-indigo-800">
             Videos
@@ -78,9 +78,9 @@ export default function Galeria() {
         </TabsList>
 
         {/* Instalaciones */}
-        <TabsContent value="instalaciones">
+        <TabsContent value="pacientes">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {images.instalaciones.map((image) => (
+            {galeria.pacientes.map((image) => (
               <button
                 key={image.id}
                 className="relative h-64 rounded-lg overflow-hidden cursor-pointer"
@@ -119,7 +119,28 @@ export default function Galeria() {
           </div>
         </TabsContent>
 
-              {/* Pacientes */}
+        {/* Instalaciones */}
+        <TabsContent value="instalaciones">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {images.instalaciones.map((image) => (
+              <button
+                key={image.id}
+                className="relative h-64 rounded-lg overflow-hidden cursor-pointer"
+                onClick={() => setSelectedImage(image.src)}
+              >
+                <Image
+                  src={image.src || "/placeholder.svg"}
+                  alt={image.alt}
+                  fill
+                  className="object-cover transition-transform hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-opacity" />
+              </button>
+            ))}
+          </div>
+        </TabsContent>
+
+          {/* Pacientes */}
           <TabsContent value="pacientes">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {galeria.pacientes.map((image) => (
