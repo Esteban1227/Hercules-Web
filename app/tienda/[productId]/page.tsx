@@ -10,6 +10,7 @@ import accesorios from "@/data/productos/accesorios/accesorios"
 import juguetes from "@/data/productos/juguetes/juguetes"
 import medicamentos from "@/data/productos/medicamentos/medicamentos"
 import arenas from "@/data/productos/arenas/arenas"
+import ShareButton from "@/components/share-button"
 
 interface ProductPageProps {
   params: {
@@ -42,7 +43,7 @@ export default function ProductPage({ params }: ProductPageProps) {
 
   switch (category) {
     case "alimento":
-      productos = alimentos 
+      productos = alimentos
       break
     case "juguete":
       productos = juguetes
@@ -133,10 +134,7 @@ export default function ProductPage({ params }: ProductPageProps) {
               </Link>
             </Button>
 
-            <Button variant="outline" size="icon" className="rounded-full">
-              <Share2 className="h-5 w-5" />
-              <span className="sr-only">Compartir producto</span>
-            </Button>
+            <ShareButton productName={producto.name} />
           </div>
 
           <div className="bg-indigo-50 p-4 rounded-lg mb-6">

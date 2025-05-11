@@ -91,6 +91,7 @@ export default function Galeria() {
                   alt={image.alt}
                   fill
                   className="object-cover transition-transform hover:scale-105"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-opacity" />
               </button>
@@ -112,6 +113,7 @@ export default function Galeria() {
                   alt={image.alt}
                   fill
                   className="object-cover transition-transform hover:scale-105"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-opacity" />
               </button>
@@ -175,7 +177,7 @@ export default function Galeria() {
           </button>
           {selectedImage && (
             <div className="relative h-[80vh] w-full">
-              <Image src={selectedImage || "/placeholder.svg"} alt="Imagen ampliada" fill className="object-contain" />
+              <Image src={selectedImage || "/placeholder.svg"} alt="Imagen ampliada" fill className="object-contain" loading="lazy" />
             </div>
           )}
         </DialogContent>

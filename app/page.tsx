@@ -8,6 +8,7 @@ import { MapPin, Clock, Phone, Star } from "lucide-react"
 import ServiceCard from "@/components/service-card"
 import ContactSection from "@/components/contact-section"
 import { useState, useEffect } from "react";
+import productosDestacados from "@/data/productos/productosDestacados/productosDestacados"
 
 
 export default function Home() {
@@ -89,7 +90,7 @@ export default function Home() {
               <div>
                 <h3 className="font-medium text-gray-900">Contacto</h3>
                 <p className="text-gray-600">+57 311 637 0334<br />
-                +57 313 748 0706 </p>
+                  +57 313 748 0706 </p>
               </div>
             </CardContent>
           </Card>
@@ -133,15 +134,15 @@ export default function Home() {
             description="Intervenciones programadas o de emergencia, con equipos profesionales y seguros."
             imageUrl="/img-pagina-principal/cirugia.jpg?height=200&width=300"
           />
-          <ServiceCard 
-          title="Laboratorio Clinico" 
-          description="Pruebas rápidas y confiables para tratamientos oportunos." 
-          imageUrl="/img-pagina-principal/laboratorio.jpg?height=200&width=300" />
+          <ServiceCard
+            title="Laboratorio Clinico"
+            description="Pruebas rápidas y confiables para tratamientos oportunos."
+            imageUrl="/img-pagina-principal/laboratorio.jpg?height=200&width=300" />
 
           <ServiceCard
             title="Peluquería y baño medicado"
             description="Higiene y estética a cargo de profesionales."
-           imageUrl="/img-pagina-principal/baño.jpg?height=200&width=300"
+            imageUrl="/img-pagina-principal/baño.jpg?height=200&width=300"
           />
           <ServiceCard
             title="Tienda"
@@ -165,7 +166,7 @@ export default function Home() {
             La satisfacción de nuestros clientes y sus mascotas es nuestra mayor recompensa.
           </p>
           <Button asChild variant="outline" className="border-indigo-600 text-indigo-600 hover:bg-indigo-50">
-            <Link href="https://www.google.com/search?sca_esv=cd2e0a442ffc9e64&rlz=1C1VDKB_esCO1018CO1018&sxsrf=AHTn8zrX9cvhsX4IUEPecz-a52N9SAFLpA:1745965460277&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzdrL-pw0zeUYMH152WGI8kOwRSFCAvlLyyksIHEymx62cHa_QNTEtWOZWgKW8Br6HqICUvcdTqrwRCG-Z-zXbTmAhKyjEvMXzd-U_9b-32-e0y1o-1eXfKRwKwtS37nNj-sC-eI%3D&q=Cl%C3%ADnica+Veterinaria+H%C3%A9rcules+Opiniones&sa=X&ved=2ahUKEwid-rKYpP6MAxUZQzABHbjSE_0Q0bkNegQIIRAD&biw=1366&bih=599&dpr=1" 
+            <Link href="https://www.google.com/search?sca_esv=cd2e0a442ffc9e64&rlz=1C1VDKB_esCO1018CO1018&sxsrf=AHTn8zrX9cvhsX4IUEPecz-a52N9SAFLpA:1745965460277&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzdrL-pw0zeUYMH152WGI8kOwRSFCAvlLyyksIHEymx62cHa_QNTEtWOZWgKW8Br6HqICUvcdTqrwRCG-Z-zXbTmAhKyjEvMXzd-U_9b-32-e0y1o-1eXfKRwKwtS37nNj-sC-eI%3D&q=Cl%C3%ADnica+Veterinaria+H%C3%A9rcules+Opiniones&sa=X&ved=2ahUKEwid-rKYpP6MAxUZQzABHbjSE_0Q0bkNegQIIRAD&biw=1366&bih=599&dpr=1"
               target="_blank" className="flex items-center gap-2">
               <Star className="h-5 w-5 fill-yellow-400 stroke-yellow-400" />
               Ver reseñas en Google
@@ -174,29 +175,67 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[1, 2, 3].map((i) => (
-            <Card key={i} className="border-none shadow-sm bg-white">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-1 mb-4">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="h-4 w-4 fill-yellow-400 stroke-yellow-400" />
-                  ))}
+          <Card className="border-none shadow-sm bg-white">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-1 mb-4">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="h-4 w-4 fill-yellow-400 stroke-yellow-400" />
+                ))}
+              </div>
+              <p className="text-gray-600 mb-4">
+                "Super recomendados, excelente servicio , calidad humana, lo mejor es que encuentras todo lo que uno necesite para nuestras mascotas.
+Me encantó todo!! Gracias por el servicio prestado 🐶🐱"
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden relative">
+                  <Image src="/placeholder.svg?height=40&width=40" alt="Cliente" fill className="object-cover" />
                 </div>
-                <p className="text-gray-600 mb-4">
-                  "Excelente atención para mi mascota. El personal es muy amable y profesional. Recomiendo totalmente
-                  sus servicios."
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden relative">
-                    <Image src="/placeholder.svg?height=40&width=40" alt="Cliente" fill className="object-cover" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-900">Cliente {i}</p>
-                  </div>
+                <div>
+                  <p className="font-medium text-gray-900">Andreita Rincon</p>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="border-none shadow-sm bg-white">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-1 mb-4">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="h-4 w-4 fill-yellow-400 stroke-yellow-400" />
+                ))}
+              </div>
+              <p className="text-gray-600 mb-4">
+                "Excelente Clínica Veterinaria con 24 horas de servicio de urgencias, muy acertados en sus diagnósticos y con una gran calidad humana. Dios los bendiga."
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden relative">
+                  <Image src="/placeholder.svg?height=40&width=40" alt="Cliente" fill className="object-cover" />
+                </div>
+                <div>
+                  <p className="font-medium text-gray-900">Martha López</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="border-none shadow-sm bg-white">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-1 mb-4">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="h-4 w-4 fill-yellow-400 stroke-yellow-400" />
+                ))}
+              </div>
+              <p className="text-gray-600 mb-4">
+                "Gracias por recibir a mi Rocky y cuidarlo los dos días que estuvo, lamentablemente tenia muchas complicaciones y su avanzada edad no ayudo y tuvo que partir al cielo de los perritos, fueron muy humanos en ese momento y permitieron pudiéramos estar todos con él y nunca nos molestaron por tener el consultorio ocupado mientras lo recogían"
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden relative">
+                  <Image src="/placeholder.svg?height=40&width=40" alt="Cliente" fill className="object-cover" />
+                </div>
+                <div>
+                  <p className="font-medium text-gray-900">Martha López</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -210,26 +249,22 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[1, 2, 3, 4].map((i) => (
-            <Card key={i} className="h-full transition-all hover:shadow-md">
-              <Link href={`/tienda/producto-${i}`} className="block">
-                <div className="relative h-48 w-full">
+          {productosDestacados.map((product) => (
+            <Link href={`/tienda/${product.id}`} key={product.id}>
+              <Card className="h-full transition-all hover:shadow-md">
+                <div className="relative h-40 w-full">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
-                    alt={`Producto ${i}`}
+                    src={product.image || "/placeholder.svg"}
+                    alt={product.name}
                     fill
                     className="object-cover rounded-t-lg"
                   />
                 </div>
-                <CardContent className="p-4 pb-14 relative">
-                  <h3 className="font-medium text-gray-900 mb-2">Producto {i}</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    Alimento premium para mascotas con ingredientes naturales.
-                  </p>
+                <CardContent className="p-3">
+                  <h3 className="font-medium text-gray-900 text-sm">{product.name}</h3>
                 </CardContent>
-              </Link>
-              <div className="absolute bottom-4 left-4 right-4"></div>
-            </Card>
+              </Card>
+            </Link>
           ))}
         </div>
 
@@ -259,17 +294,17 @@ export default function Home() {
             style={{ border: 0 }}
             className="absolute top-0 left-0 w-full h-full"
           ></iframe>
-        <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-          <Link
-            href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+H%C3%A9rcules/@3.492575,-76.5062012,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a997aa17475f:0xd88bb2d00e4d12be!8m2!3d3.4925696!4d-76.5036263!16s%2Fg%2F11k51ggr95?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">
-              Abrir en Google Maps
-            </button>
-          </Link>
-         </div>
+          <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+            <Link
+              href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+H%C3%A9rcules/@3.492575,-76.5062012,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a997aa17475f:0xd88bb2d00e4d12be!8m2!3d3.4925696!4d-76.5036263!16s%2Fg%2F11k51ggr95?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">
+                Abrir en Google Maps
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
 
