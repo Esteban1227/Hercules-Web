@@ -158,7 +158,7 @@ export default function Home() {
       </section>
 
       {/* Reviews Section */}
-      <section className="py-12 bg-indigo-50 rounded-lg mb-12">
+      <section className="p-10 bg-indigo-50 rounded-lg mb-12">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-indigo-800 mb-4">Lo que dicen nuestros clientes</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-6">

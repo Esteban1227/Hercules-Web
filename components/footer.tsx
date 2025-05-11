@@ -197,7 +197,7 @@ export default function Footer() {
               target="_blank"
               className="flex items-center gap-1 text-indigo-100 hover:text-white transition-colors"
             >
-              <Star className="h-4 w-4 fill-yellow-400 stroke-yellow-400" />
+              <Star className="h-4 w-4 fill-yellow-400 stroke-yellow-400" strokeWidth="2" />
               Déjanos una reseña en Google
             </Link>
           </div>

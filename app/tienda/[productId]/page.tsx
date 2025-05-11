@@ -5,36 +5,78 @@ import { ChevronRight, Heart, Share2 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import ContactSection from "@/components/contact-section"
+import alimentos from "@/data/productos/alimentos/alimentos"
+import accesorios from "@/data/productos/accesorios/accesorios"
+import juguetes from "@/data/productos/juguetes/juguetes"
+import medicamentos from "@/data/productos/medicamentos/medicamentos"
+import arenas from "@/data/productos/arenas/arenas"
 
 interface ProductPageProps {
   params: {
     productId: string
   }
 }
+interface Product {
+  id: string
+  name: string
+  description: string
+  image: string
+  category?: string
+}
 
 export default function ProductPage({ params }: ProductPageProps) {
   const { productId } = params
 
-  // En un caso real, aquí se obtendría la información del producto desde una API o base de datos
-  const product = {
-    id: productId,
-    name: `Producto Hills Adulto Razas pequeñas 2 kg`,
-    description: "Producto de alta calidad para el cuidado y bienestar de tu mascota.",
-    longDescription:
-      "Hill’s es una marca reconocida por sus fórmulas científicamente desarrolladas para perros con necesidades nutricionales específicas. Su línea Prescription Diet incluye productos para el manejo de problemas renales, digestivos, urinarios, articulares, de peso y más. Ofrece alta calidad veterinaria, ideal para el manejo clínico mediante la alimentación.",
-    specifications: [
-      "Presentaciones: 2 kg ",
-  
-    ],
-    images: Array(1).fill(`/img-productos/hills.jpg?height=600&width=600`),
+  // necesito tratar el id del para obtener la categoria a la que pertenece el id que viene es [categoria]-[id]
+  const [category, id] = productId.split("-")
+
+  let producto: Product = {
+    id: "",
+    name: "",
+    description: "",
+    image: "",
+    category: "",
   }
 
-  // Productos relacionados
-  const relatedProducts = Array.from({ length: 4 }, (_, i) => ({
-    id: `related-${i + 1}`,
-    name: `Producto Relacionado ${i + 1}`,
-    image: "/placeholder.svg?height=200&width=300",
-  }))
+  let productos: Product[] = []
+
+  switch (category) {
+    case "alimento":
+      productos = alimentos 
+      break
+    case "juguete":
+      productos = juguetes
+      break
+    case "medicamento":
+      productos = medicamentos
+      break
+    case "accesorio":
+      productos = accesorios
+      break
+    case "arena":
+      productos = arenas
+      break
+    default:
+      console.error("Categoría no válida")
+      break
+  }
+
+  producto = productos.find((item) => item.id === productId) || {
+    id: "",
+    name: "",
+    description: "",
+    image: "",
+    category: "",
+  }
+
+
+  // Productos relacionados quiero que sean 4 productos de la misma categoria aleatoriamente
+  const relatedProducts = productos
+    .filter((item) => item.category === producto.category && item.id !== productId)
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 4)
+
+  console.log(relatedProducts, "relatedProducts")
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -48,18 +90,18 @@ export default function ProductPage({ params }: ProductPageProps) {
           Tienda
         </Link>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-gray-700">{product.name}</span>
+        <span className="text-gray-700">{producto?.name}</span>
       </div>
 
       {/* Product Details */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         {/* Product Images */}
-        <div>
-          <div className="relative h-[400px] rounded-lg overflow-hidden mb-4">
-            <Image src={product.images[0] || "/placeholder.svg"} alt={product.name} fill className="object-contain" />
-          </div>
 
-          <div className="grid grid-cols-5 gap-2">
+        <div className="relative h-[400px] rounded-lg overflow-hidden mb-4">
+          <Image src={producto?.image || "/placeholder.svg"} alt={producto?.name} fill className="object-contain" />
+        </div>
+
+        {/* <div className="grid grid-cols-5 gap-2">
             {product.images.map((image, index) => (
               <button
                 key={index}
@@ -73,27 +115,22 @@ export default function ProductPage({ params }: ProductPageProps) {
                 />
               </button>
             ))}
-          </div>
-        </div>
+          </div> */}
+
 
         {/* Product Info */}
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">{product.name}</h1>
-          <p className="text-gray-600 mb-6">{product.description}</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">{producto?.name}</h1>
+          <p className="text-gray-600 mb-6">{producto?.description}</p>
 
           <div className="flex items-center gap-4 mb-6">
             <Button asChild size="lg" className="bg-indigo-600 hover:bg-indigo-700">
               <Link
-                href={`https://wa.me/573116370334?text=Me%20interesa%20el%20producto%20${encodeURIComponent(product.name)}`}
+                href={`https://wa.me/573116370334?text=Me%20interesa%20el%20producto%20${encodeURIComponent(producto?.name)}`}
                 target="_blank"
               >
                 Consultar por WhatsApp
               </Link>
-            </Button>
-
-            <Button variant="outline" size="icon" className="rounded-full">
-              <Heart className="h-5 w-5" />
-              <span className="sr-only">Añadir a favoritos</span>
             </Button>
 
             <Button variant="outline" size="icon" className="rounded-full">
@@ -140,26 +177,6 @@ export default function ProductPage({ params }: ProductPageProps) {
               </Button>
             </div>
           </div>
-
-          <Tabs defaultValue="descripcion">
-            <TabsList>
-              <TabsTrigger value="descripcion">Descripción</TabsTrigger>
-              <TabsTrigger value="especificaciones">Especificaciones</TabsTrigger>
-            </TabsList>
-            <TabsContent value="descripcion" className="mt-4">
-              <p className="text-gray-600">{product.longDescription}</p>
-            </TabsContent>
-            <TabsContent value="especificaciones" className="mt-4">
-              <ul className="space-y-2">
-                {product.specifications.map((spec, index) => (
-                  <li key={index} className="text-gray-600 flex items-start">
-                    <span className="text-indigo-500 mr-2">•</span>
-                    {spec}
-                  </li>
-                ))}
-              </ul>
-            </TabsContent>
-          </Tabs>
         </div>
       </div>
 
