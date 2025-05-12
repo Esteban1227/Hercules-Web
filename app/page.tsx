@@ -14,7 +14,7 @@ import productosDestacados from "@/data/productos/productosDestacados/productosD
 export default function Home() {
 
   const images = [
-    "/img-pagina-principal/about-us.jpg"
+    "/about-us.jpg"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -90,7 +90,9 @@ export default function Home() {
               <div>
                 <h3 className="font-medium text-gray-900">Contacto</h3>
                 <p className="text-gray-600">+57 311 637 0334<br />
-                  +57 313 748 0706 </p>
+                  +57 313 748 0706 <br />
+                  +57 311 771 5475 <br />
+                  +57 386 1640 </p>
               </div>
             </CardContent>
           </Card>
@@ -122,32 +124,32 @@ export default function Home() {
           <ServiceCard
             title="Consultas generales y especializadas"
             description="Atención preventiva, diagnóstica y de tratamiento adaptada a cada necesidad."
-            imageUrl="/img-pagina-principal/consulta.jpg?height=200&width=300"
+            imageUrl="/img-servicios/consulta.jpg?height=200&width=300"
           />
           <ServiceCard
             title="Vacunación y desparasitación"
             description="Planes efectivos para mantener a tu mascota protegida y saludable."
-            imageUrl="/img-pagina-principal/desparasitacion.avif?height=200&width=300"
+            imageUrl="/img-servicios/desparasitacion.avif?height=200&width=300"
           />
           <ServiceCard
             title="Cirugías"
             description="Intervenciones programadas o de emergencia, con equipos profesionales y seguros."
-            imageUrl="/img-pagina-principal/cirugia.jpg?height=200&width=300"
+            imageUrl="/img-servicios/cirugia.jpg?height=200&width=300"
           />
           <ServiceCard
             title="Laboratorio Clinico"
             description="Pruebas rápidas y confiables para tratamientos oportunos."
-            imageUrl="/img-pagina-principal/laboratorio.jpg?height=200&width=300" />
+            imageUrl="/img-servicios/laboratorio.jpg?height=200&width=300" />
 
           <ServiceCard
             title="Peluquería y baño medicado"
             description="Higiene y estética a cargo de profesionales."
-            imageUrl="/img-pagina-principal/baño.jpg?height=200&width=300"
+            imageUrl="/img-servicios/baño.jpg?height=200&width=300"
           />
           <ServiceCard
             title="Tienda"
             description="Alimentos y productos seleccionados para el cuidado diario de tu mascota."
-            imageUrl="/img-pagina-principal/tienda.jpg?height=200&width=300"
+            imageUrl="/img-servicios/tienda.jpg?height=200&width=300"
           />
         </div>
 

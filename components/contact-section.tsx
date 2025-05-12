@@ -40,6 +40,7 @@ export default function ContactSection() {
                 <div>
                   <p className="font-medium">Dirección</p>
                   <p className="text-gray-600">Av. 2b norte # 73a -26 , Cali</p>
+                  <p className="text-gray-600">Brisas de los Alamos</p>
                   <Link
                     href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+H%C3%A9rcules/@3.492575,-76.5062012,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a997aa17475f:0xd88bb2d00e4d12be!8m2!3d3.4925696!4d-76.5036263!16s%2Fg%2F11k51ggr95?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D"
                     target="_blank"
@@ -56,7 +57,9 @@ export default function ContactSection() {
                   <Link href="https://wa.me/573116370334" target="_blank" className="text-gray-600 hover:text-indigo-600">
                     +57 311 637 0334
                   </Link>
-                  <p className="text-sm text-gray-500 mt-1">Respuesta rápida por WhatsApp</p>
+                  <p className="text-sm text-gray-500 mt-1">+57 313 748 0706</p>
+                  <p className="text-sm text-gray-500 mt-1">+57 311 771 5475</p>
+                  <p className="text-sm text-gray-500 mt-1">+57 386 1640</p>
                 </div>
               </li>
               <li className="flex items-start gap-3 w-80">
@@ -74,6 +77,7 @@ export default function ContactSection() {
                   <p className="font-medium">Horario de Atención</p>
                   <p className="text-gray-600">Lun-Sab: 8am-10pm</p>
                   <p className="text-gray-600">Dom: 9am-6pm</p>
+                  <p className="text-gray-600">Urgencias 24 horas</p>
                 </div>
               </li>
             </ul>

@@ -130,6 +130,7 @@ export default function Header() {
                       <div className="text-gray-600">
                         <p>Lunes-Sabado: 8am-10pm</p>
                         <p>Domingo-Festivos : 9am-6pm</p>
+                        <p>Urgencias 24 horas</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">

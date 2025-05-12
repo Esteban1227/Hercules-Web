@@ -52,6 +52,9 @@ export default function Contacto() {
             <Link href="https://wa.me/573116370334" target="_blank" className="text-indigo-600 hover:underline">
               +57 311 637 0334
             </Link>
+            <p className="text-sm text-gray-500 mt-1">+57 313 748 0706</p>
+            <p className="text-sm text-gray-500 mt-1">+57 311 771 5475</p>
+            <p className="text-sm text-gray-500 mt-1">+57 386 1640</p>
           </CardContent>
         </Card>
 
@@ -161,7 +164,7 @@ export default function Contacto() {
             <CardContent className="p-6">
               <h3 className="font-medium text-lg text-indigo-700 mb-2">¿Cada cuento debo desparasitar a mi mascota?</h3>
               <p className="text-gray-600">
-                La desparasitacion se debe dar siempre cada 3 meses.
+                La desparasitacion se debe realizar cada 3 meses.
               </p>
             </CardContent>
           </Card>
