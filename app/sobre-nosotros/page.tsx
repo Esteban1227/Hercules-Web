@@ -11,7 +11,7 @@ export default function SobreNosotros() {
       <div className="max-w-3xl mx-auto text-center mb-12">
         <h1 className="text-4xl font-bold text-indigo-800 mb-4">Sobre Nosotros</h1>
         <p className="text-lg text-gray-600">
-          Conoce más sobre nuestra clínica veterinaria y los servicios que ofrecemos para el cuidado de tus mascotas.
+          Conoce más de la Clínica Veterinaria Hercules y los servicios que ofrecemos para el cuidado de tus mascotas.
         </p>
       </div>
 
@@ -28,18 +28,20 @@ export default function SobreNosotros() {
             <div>
               <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Nuestra Historia</h2>
               <p className="text-gray-600 mb-4 text-justify" >
-                Fundada en el año 2023, la Clínica Veterinaria Hércules nació con el propósito de ofrecer atención médica de calidad para mascotas, 
-                impulsada por una profunda vocación hacia los animales. Esta pasión nació desde la infancia de nuestro fundador y médico principal, 
-                cuya conexión con los animales lo inspiró a convertir su vocación en un compromiso de vida.
+                La Clínica Veterinaria Hércules fue fundada en el año 2023 con la misión de brindar atención médica de calidad a las mascotas, 
+                guiados por una profunda vocación y amor hacia los animales.
 
               </p>
               <p className="text-gray-600 mb-4 text-justify">
-                El nombre de nuestra clínica rinde homenaje a Hércules, un compañero entrañable que marcó profundamente nuestra historia y nos inspiró a crear un 
-                espacio donde los animales sean atendidos con amor, respeto y profesionalismo.
+                Desde muy joven, nuestro fundador —hoy médico principal de la clínica— sintió una conexión especial con los animalitos, 
+                lo que lo llevó a transformar su pasión en un compromiso de vida al servicio del bienestar animal.
+              </p>
+              <p className="text-gray-600 mb-4 text-justify">
+                El nombre de nuestra clínica es un homenaje a Hércules, un compañero entrañable que dejó una huella imborrable en nuestra historia y nos inspiró a crear un espacio donde cada paciente sea atendido con respeto, profesionalismo y amor.
               </p>
               <p className="text-gray-600 text-justify">
-                 Con un enfoque cercano y altamente profesional, hemos crecido ofreciendo servicios especializados que siempre buscan el bienestar de cada paciente. 
-                 Nuestro compromiso con la excelencia ha consolidado la confianza de nuestros clientes, quienes nos han confiado el cuidado de sus queridas mascotas.
+                Con un enfoque cercano y especializado, hemos crecido de la mano de nuestros clientes, quienes confían en nosotros el cuidado de sus seres más queridos. 
+                Ese crecimiento no solo se refleja en la confianza depositada, sino también en la expansión de nuestras instalaciones y en la conformación de un equipo profesional cada vez más capacitado y comprometido.
               </p>
             </div>
             <div className="relative h-[300px] rounded-lg overflow-hidden">
@@ -65,9 +67,8 @@ export default function SobreNosotros() {
             <Card>
               <CardContent className="p-6">
                 <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Nuestra Visión</h2>
-                <p className="text-gray-600 text-justify">
-                    Ser reconocidos como una clínica veterinaria líder en nuestra comunidad, destacándonos por nuestro trato cercano, 
-                    nuestra excelencia médica y la pasión genuina que sentimos por los animales. Aspiramos a crecer y expandir nuestros servicios, 
+                <p className="text-gray-600 mb-4 text-justify">
+                    Ser reconocidos como una clínica veterinaria líder en nuestra comunidad, destacándonos por nuestra atención en urgencias 24 horas al día, 7 días a la semana, el trato cercano, la excelencia médica y la pasión genuina que sentimos por los animales. Aspiramos a crecer y expandir nuestros servicios, 
                     sin perder jamás la esencia de amor y compromiso que dio vida a la Clínica Veterinaria Hércules.
                 </p>
               </CardContent>
@@ -133,61 +134,61 @@ export default function SobreNosotros() {
           <ServiceCard
             title="Consulta General y especializada"
             description="Atención preventiva, diagnóstica y de tratamiento adaptada a cada necesidad."
-            imageUrl="/img-pagina-principal/consulta.jpg?height=200&width=300"
+            imageUrl="/img-servicios/consulta.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Vacunación y desparasitacion"
             description="Planes efectivos para mantener a tu mascota protegida y saludable."
-            imageUrl="/img-pagina-principal/desparasitacion.avif?height=200&width=300"
+            imageUrl="/img-servicios/desparasitacion.avif?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Cirugías"
             description="Intervenciones programadas o de emergencia, con equipos profesionales y seguros."
-            imageUrl="/img-pagina-principal/cirugia.jpg?height=200&width=300"
+            imageUrl="/img-servicios/cirugia.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Diagnóstico por imagen"
             description=" Ecografías y radiografías con tecnología avanzada para diagnósticos precisos."
-            imageUrl="/img-pagina-principal/consulta.jpg?height=200&width=300"
+            imageUrl="/img-servicios/diagnostico.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Laboratorio clínico"
             description="Pruebas rápidas y confiables para tratamientos oportunos."
-            imageUrl="/img-pagina-principal/laboratorio.jpg?height=200&width=300"
+            imageUrl="/img-servicios/laboratorio.jpg?height=200&width=300"
             expanded
           />
            <ServiceCard
             title="Profilaxis dental"
             description="Limpieza y cuidado bucal para prevenir enfermedades dentales."
-            imageUrl="/img-pagina-principal/consulta.jpg?height=200&width=300"
+            imageUrl="/img-servicios/profilaxis.webp?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Peluquería y baño"
             description="Higiene y estética a cargo de profesionales."
-            imageUrl="/img-pagina-principal/baño.jpg?height=200&width=300"
+            imageUrl="/img-servicios/baño.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Tienda"
             description="Alimentos y productos seleccionados para el cuidado diario de tu mascota."
-            imageUrl="/img-pagina-principal/tienda.jpg?height=200&width=300"
+            imageUrl="/img-servicios/tienda.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Hospitalización y cuidados intensivos"
             description="Supervisión constante para casos que requieren atención especial."
-            imageUrl="/img-pagina-principal/consulta.jpg?height=200&width=300"
+            imageUrl="/img-servicios/hospitalizacion.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
-            title="Emergencias"
+            title="Urgencias"
             description="Atención inmediata en situaciones críticas."
-            imageUrl="/img-pagina-principal/consulta.jpg?height=200&width=300"
+            imageUrl="/img-servicios/urgencia.jpg?height=200&width=300"
             expanded
           />
         </div>

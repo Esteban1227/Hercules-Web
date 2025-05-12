@@ -20,10 +20,10 @@ export default function Footer() {
                 />
 
               </div>
-              <span className="text-xl font-bold">Veterinaria Hercules</span>
+              <span className="text-xl font-bold">Clinica Veterinaria Hercules</span>
             </div>
             <p className="text-indigo-100 mb-4">
-              Clínica veterinaria comprometida con la salud y bienestar de tus mascotas. Ofrecemos servicios
+              Estamos comprometidos con la salud y bienestar de tus mascotas. Ofrecemos servicios
               profesionales y productos de calidad.
             </p>
             <div className="flex gap-4">
@@ -160,11 +160,14 @@ export default function Footer() {
                 <MapPin className="h-5 w-5 text-indigo-300 mt-0.5" />
                 <span className="text-indigo-100">Av. 2b norte # 73a -26, Cali</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-indigo-300" />
-                <Link href="573116370334" className="text-indigo-100 hover:text-white transition-colors">
-                  +57 311 637 0334
-                </Link>
+              <li className="flex items-start gap-3">
+                <Phone className="h-5 w-5 text-indigo-300 mt-1" />
+                <div className="flex flex-col text-indigo-100 hover:text-white transition-colors">
+                  <Link href="tel:+573116370334">+57 311 637 0334</Link>
+                  <span>+57 313 748 0706</span>
+                  <span>+57 311 771 5475</span>
+                  <span>+57 386 1649</span>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-indigo-300" />
@@ -180,6 +183,7 @@ export default function Footer() {
                 <div className="text-indigo-100">
                   <p>Lun-Sab: 8am-10pm</p>
                   <p>Dom: 9am-6pm</p>
+                  <p>Urgencias 24 horas</p>
                 </div>
               </li>
             </ul>
@@ -188,7 +192,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-indigo-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-indigo-100 text-sm">
-            © {new Date().getFullYear()} Veterinaria Hercules. Todos los derechos reservados.
+            © {new Date().getFullYear()} Clinica Veterinaria Hercules. Todos los derechos reservados.
           </p>
 
           <div className="flex items-center gap-2">
