@@ -40,6 +40,34 @@ const juguetes = [
     "description": "Los ratones de juguete para gato son ideales para simular la caza, lo que les proporciona a tus gatos una experiencia de juego estimulante. Fabricados con materiales suaves pero duraderos, están diseñados para resistir los mordiscos y arañazos. Estos ratones son perfectos para lanzar, perseguir y morder, proporcionando horas de entretenimiento a tu felino.",
     "image": "/img-productos/juguetes/ratones.jpg",
     "category": "juguete"
+  },
+  {
+    "id": "juguete-7",
+    "name": "Juguete para gato",
+    "description": "Juguete de tres niveles para gatos con pistas tipo torre, disco de inteligencia y bolas giratorias. Ideal para el entrenamiento, la diversión y el desarrollo mental de tu mascota.",
+    "image": "/img-productos/juguetes/juguete-gato.webp",
+    "category": "juguete"
+  },
+  {
+    "id": "juguete-8",
+    "name": "Muñeco",
+    "description": "Este divertido juguete masticable para perros está diseñado en forma de mono, hecho de material elástico y resistente, ideal para mantener a tu mascota entretenida y ayudar a satisfacer su necesidad de masticar. ",
+    "image": "/img-productos/juguetes/muñeco.webp",
+    "category": "juguete"
+  },
+  {
+    "id": "juguete-9",
+    "name": "Pelota",
+    "description": "Divertida y resistente, esta pelota de plástico es perfecta para mantener a tu mascota activa y entretenida. Su diseño ligero y duradero permite que ruede fácilmente, lo que fomenta el ejercicio y el juego interactivo.",
+    "image": "/img-productos/juguetes/pelota.webp",
+    "category": "juguete"
+  },
+  {
+    "id": "juguete-10",
+    "name": "Juguete de tela",
+    "description": "Pequeña y ligera, esta pelota está hecha de tela resistente, perfecta para que tu mascota la mordisquee, lance o persiga.",
+    "image": "/img-productos/juguetes/tela.webp",
+    "category": "juguete"
   }
 ]
 

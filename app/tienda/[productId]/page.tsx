@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ChevronRight, Heart, Share2 } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import ContactSection from "@/components/contact-section"
@@ -17,6 +16,7 @@ interface ProductPageProps {
     productId: string
   }
 }
+
 interface Product {
   id: string
   name: string
@@ -28,7 +28,6 @@ interface Product {
 export default function ProductPage({ params }: ProductPageProps) {
   const { productId } = params
 
-  // necesito tratar el id del para obtener la categoria a la que pertenece el id que viene es [categoria]-[id]
   const [category, id] = productId.split("-")
 
   let producto: Product = {
@@ -70,14 +69,45 @@ export default function ProductPage({ params }: ProductPageProps) {
     category: "",
   }
 
-
-  // Productos relacionados quiero que sean 4 productos de la misma categoria aleatoriamente
   const relatedProducts = productos
     .filter((item) => item.category === producto.category && item.id !== productId)
     .sort(() => Math.random() - 0.5)
     .slice(0, 4)
 
-  console.log(relatedProducts, "relatedProducts")
+  const faqMap: { [key: string]: string[] } = {
+    alimento: [
+      "¿Que precio tiene?",
+      "¿En que presentacion lo tienen disponible?",
+      "¿Que cantidad se da al dia?",
+      "¿Tiene disponibilidad inmediata?",
+    ],
+    juguete: [
+      "¿Que precio tiene?",
+      "¿De qué material está hecho?",
+      "¿Es resistente a mordidas fuertes?",
+      "¿Tiene disponibilidad inmediata?",
+    ],
+    medicamento: [
+      "¿Que precio tiene?",
+      "¿Este medicamento requiere receta?",
+      "¿Tiene efectos secundarios comunes?",
+      "¿Tiene disponibilidad inmediata?",
+    ],
+    accesorio: [
+      "¿Que precio tiene?",
+      "¿Este accesorio se ajusta a todos los tamaños?",
+      "¿Lo tienen en diferentes colores?",
+      "¿Tiene disponibilidad inmediata?",
+    ],
+    arena: [
+      "¿Que precio tiene?",
+      "¿Controla bien los olores?",
+      "¿En que presentacion esta disponible?",
+      "¿Tiene disponibilidad inmediata?",
+    ],
+  }
+
+  const faqs = faqMap[category] || []
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -97,27 +127,14 @@ export default function ProductPage({ params }: ProductPageProps) {
       {/* Product Details */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         {/* Product Images */}
-
         <div className="relative h-[400px] rounded-lg overflow-hidden mb-4">
-          <Image src={producto?.image || "/placeholder.svg"} alt={producto?.name} fill className="object-contain" />
+          <Image
+            src={producto?.image || "/placeholder.svg"}
+            alt={producto?.name}
+            fill
+            className="object-contain"
+          />
         </div>
-
-        {/* <div className="grid grid-cols-5 gap-2">
-            {product.images.map((image, index) => (
-              <button
-                key={index}
-                className="relative h-20 border rounded-md overflow-hidden hover:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              >
-                <Image
-                  src={image || "/placeholder.svg"}
-                  alt={`${product.name} - Vista ${index + 1}`}
-                  fill
-                  className="object-cover"
-                />
-              </button>
-            ))}
-          </div> */}
-
 
         {/* Product Info */}
         <div>
@@ -133,46 +150,27 @@ export default function ProductPage({ params }: ProductPageProps) {
                 Consultar por WhatsApp
               </Link>
             </Button>
-
             <ShareButton productName={producto.name} />
           </div>
 
           <div className="bg-indigo-50 p-4 rounded-lg mb-6">
             <h3 className="font-medium text-indigo-800 mb-2">Preguntas frecuentes</h3>
             <div className="grid gap-2">
-              <Button
-                asChild
-                variant="ghost"
-                className="justify-start text-left h-auto py-2 hover:bg-indigo-100 hover:text-indigo-700"
-              >
-                <Link
-                  href={`https://wa.me/573116370334?text=¿Este%20producto%20es%20adecuado%20para%20cachorros?`}
-                  target="_blank"
+              {faqs.map((question, index) => (
+                <Button
+                  asChild
+                  variant="ghost"
+                  className="justify-start text-left h-auto py-2 hover:bg-indigo-100 hover:text-indigo-700"
+                  key={index}
                 >
-                  ¿Este producto es adecuado para gato esterilizado?
-                </Link>
-              </Button>
-              <Button
-                asChild
-                variant="ghost"
-                className="justify-start text-left h-auto py-2 hover:bg-indigo-100 hover:text-indigo-700"
-              >
-                <Link href={`https://wa.me/573116370334?text=¿Cuánto%20tiempo%20dura%20este%20producto?`} target="_blank">
-                  ¿Cuánto tiempo dura este producto?
-                </Link>
-              </Button>
-              <Button
-                asChild
-                variant="ghost"
-                className="justify-start text-left h-auto py-2 hover:bg-indigo-100 hover:text-indigo-700"
-              >
-                <Link
-                  href={`https://wa.me/573116370334?text=¿Tienen%20disponibilidad%20inmediata%20de%20este%20producto?`}
-                  target="_blank"
-                >
-                  ¿Tienen disponibilidad inmediata?
-                </Link>
-              </Button>
+                  <Link
+                    href={`https://wa.me/573116370334?text=${encodeURIComponent(question)}`}
+                    target="_blank"
+                  >
+                    {question}
+                  </Link>
+                </Button>
+              ))}
             </div>
           </div>
         </div>
