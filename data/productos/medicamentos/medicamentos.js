@@ -87,7 +87,14 @@ const medicamentos = [
     "id": "medicamento-13",
     "name": "Rondel",
     "description": "Rondel es un antiparasitario de amplio espectro para perros y gatos, formulado con pamoato de pirantel y prazicuantel. Eficaz contra nematodos y cestodos, viene en una jeringa con anillo dosificador que facilita su administración, asegurando una dosificación precisa y efectiva.",
-    "image": "/img-productos/medicamentos/rondel.webp",
+    "image": "/img-productos/medicamentos/rondel.jpg",
+    "category": "medicamento"
+  },
+  {
+    "id": "medicamento-14",
+    "name": "Revitalice",
+    "description": "Revitalice es un suero oral rehidratante y energizante para perros y gatos. Está diseñado para rehidratar, revitalizar y recuperar a las mascotas en estados de deshidratación, decaimiento o debilidad. ",
+    "image": "/img-productos/medicamentos/revitalice.webp",
     "category": "medicamento"
   }
 ]

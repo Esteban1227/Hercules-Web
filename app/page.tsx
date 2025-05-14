@@ -14,7 +14,12 @@ import productosDestacados from "@/data/productos/productosDestacados/productosD
 export default function Home() {
 
   const images = [
-    "/about-us.jpg"
+    "/img-pagina-principal/c-1.jpg",
+    "/img-pagina-principal/c-2.png",
+    "/img-pagina-principal/c-3.jpg",
+    "/img-pagina-principal/c-4.jpg",
+    "/img-pagina-principal/c-5.jpg",
+    "/img-pagina-principal/c-6.jpg"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,7 +27,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Cambia cada 5 segundos
+    }, 20000); // Cambia cada 5 segundos
 
     return () => clearInterval(interval);
   }, []);
@@ -61,7 +66,7 @@ export default function Home() {
               src={images[currentIndex]}
               alt={`Imagen ${currentIndex + 1}`}
               fill
-              className="object-cover transition-opacity duration-1000"
+              className="object-contain rounded-lg transition-opacity duration-1000"
             />
           </div>
         </div>
