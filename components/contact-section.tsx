@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Clock, Star } from "lucide-react"
 import Link from "next/link"
+import { SiTiktok } from "react-icons/si";
 
 export default function ContactSection() {
   return (
@@ -59,7 +60,7 @@ export default function ContactSection() {
                   </Link>
                   <p className="text-sm text-gray-500 mt-1">+57 313 748 0706</p>
                   <p className="text-sm text-gray-500 mt-1">+57 311 771 5475</p>
-                  <p className="text-sm text-gray-500 mt-1">+57 386 1640</p>
+                  <p className="text-sm text-gray-500 mt-1">+602 386 1640</p>
                 </div>
               </li>
               <li className="flex items-start gap-3 w-80">
@@ -111,10 +112,10 @@ export default function ContactSection() {
                   asChild
                   size="icon"
                   variant="outline"
-                  className="rounded-full border-indigo-200 hover:border-indigo-600 hover:bg-indigo-50"
+                  className="rounded-full border-indigo-200 hover:border-indigo-600 bg-white hover:bg-indigo-50"
                 >
                   <Link href="https://www.tiktok.com/@veterinariaherculescali" target="_blank">
-                    <Twitter className="h-4 w-4 text-indigo-600" />
+                    <SiTiktok className="h-4 w-4 text-indigo-600" />
                     <span className="sr-only">TikTok</span>
                   </Link>
                 </Button>

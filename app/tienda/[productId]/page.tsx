@@ -164,7 +164,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                   key={index}
                 >
                   <Link
-                    href={`https://wa.me/573116370334?text=${encodeURIComponent(question)}`}
+                    href={`https://wa.me/573116370334?text=${encodeURIComponent(`Hola, el producto: ${producto?.name || ''}. ${question}`)}`}
                     target="_blank"
                   >
                     {question}

@@ -115,7 +115,7 @@ const arenas = [
     "id": "arena-17",
     "name": "Arena Unikat",
     "description": "Unikat presenta una arena sanitaria premium que combina alta capacidad de absorción con un control eficaz de olores. Su fórmula aglomerante permite una limpieza sencilla, mientras que su composición natural asegura la comodidad y bienestar de tu gato. Ideal para hogares que buscan una solución higiénica y eficiente.",
-    "image": "/img-productos/arenas/unikat.png",
+    "image": "/img-productos/arenas/unikat.webp",
     "category": "arena"
   }
 ]

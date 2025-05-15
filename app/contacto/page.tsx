@@ -54,7 +54,7 @@ export default function Contacto() {
             </Link>
             <p className="text-sm text-gray-500 mt-1">+57 313 748 0706</p>
             <p className="text-sm text-gray-500 mt-1">+57 311 771 5475</p>
-            <p className="text-sm text-gray-500 mt-1">+57 386 1640</p>
+            <p className="text-sm text-gray-500 mt-1">+602 386 1640</p>
           </CardContent>
         </Card>
 
@@ -190,8 +190,11 @@ export default function Contacto() {
       {/* Business Hours Section */}
       <section className="mb-16">
         <h2 className="text-2xl font-bold text-indigo-800 mb-6">Horario de Atención</h2>
-        <p className="mb-2">
-                Urgencias 24 Horas</p>
+        <div className="bg-red-50 border border-red-400 rounded-lg p-5 mb-10 flex flex-col items-center shadow-md">
+          <p className="text-xl font-bold text-red-700 uppercase tracking-wide mb-2 text-center">
+            Urgencias 24 Horas
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card>
             <CardContent className="p-6">

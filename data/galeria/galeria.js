@@ -90,61 +90,6 @@ const galeria = {
           src: "/img-galeria/pacientes/p18.jpg",
           alt: "Revisión general a paciente",
         },
-        {
-          id: "p19",
-          src: "/img-galeria/pacientes/p19.jpg",
-          alt: "Revisión general a paciente",
-        },
-        {
-          id: "p20",
-          src: "/img-galeria/pacientes/p20.jpg",
-          alt: "Revisión general a paciente",
-        },
-        {
-          id: "p21",
-          src: "/img-galeria/pacientes/p21.jpg",
-          alt: "Revisión general a paciente",
-        },
-        {
-          id: "p22",
-          src: "/img-galeria/pacientes/p22.jpg",
-          alt: "Revisión general a paciente",
-        },
-        {
-          id: "p23",
-          src: "/img-galeria/pacientes/p23.jpg",
-          alt: "Revisión general a paciente",
-        },
-        {
-          id: "p24",
-          src: "/img-galeria/pacientes/p24.jpg",
-          alt: "Revisión general a paciente",
-        },
-        {
-          id: "p25",
-          src: "/img-galeria/pacientes/p25.jpg",
-          alt: "Revisión general a paciente",
-        },
-        {
-          id: "p26",
-          src: "/img-galeria/pacientes/p26.jpg",
-          alt: "Revisión general a paciente",
-        },
-        {
-          id: "p27",
-          src: "/img-galeria/pacientes/p27.jpg",
-          alt: "Revisión general a paciente",
-        },
-        {
-          id: "p28",
-          src: "/img-galeria/pacientes/p28.jpg",
-          alt: "Revisión general a paciente",
-        },
-        {
-          id: "p29",
-          src: "/img-galeria/pacientes/p29.jpg",
-          alt: "Revisión general a paciente",
-        },
     ],
      servicios:[
       {
@@ -224,16 +169,129 @@ const galeria = {
       },
       {
         id: "sv-16",
-        src: "/img-galeria/servicios/sv-16.jpg",
+        src: "/img-galeria/publicidad/sv-16.jpg",
         alt: "Servicio de consulta veterinaria",
+      },
+     ],
+      publicidad:[
+      {
+        id: "pb-1",
+        src: "/img-galeria/publicidad/pb-1.jpg",
+        alt: "Publicidad Clinica veterinaria Hercules",
       },
       {
-        id: "sv-17",
-        src: "/img-galeria/servicios/sv-17.webp",
-        alt: "Servicio de consulta veterinaria",
+        id: "pb-2",
+        src: "/img-galeria/publicidad/pb-2.jpg",
+        alt: "Publicidad Clinica veterinaria Hercules",
+      },
+      {
+        id: "pb-3",
+        src: "/img-galeria/publicidad/pb-3.jpg",
+        alt: "Publicidad Clinica veterinaria Hercules",
+      },
+      {
+        id: "pb-4",
+        src: "/img-galeria/publicidad/pb-4.jpg",
+        alt: "Publicidad Clinica veterinaria Hercules",
+      },
+      {
+        id: "pb-5",
+        src: "/img-galeria/publicidad/pb-5.jpg",
+        alt: "Publicidad Clinica veterinaria Hercules",
+      },
+      {
+        id: "pb-6",
+        src: "/img-galeria/publicidad/pb-6.jpg",
+        alt: "Publicidad Clinica veterinaria Hercules",
+      },
+      {
+        id: "pb-7",
+        src: "/img-galeria/publicidad/pb-7.jpg",
+        alt: "Publicidad Clinica veterinaria Hercules",
+      },
+      {
+        id: "pb-8",
+        src: "/img-galeria/publicidad/pb-8.jpg",
+        alt: "Publicidad Clinica veterinaria Hercules",
+      },
+      {
+        id: "pb-9",
+        src: "/img-galeria/publicidad/pb-9.jpg",
+        alt: "Publicidad Clinica veterinaria Hercules",
+      },
+      {
+        id: "pb-10",
+        src: "/img-galeria/publicidad/pb-10.jpg",
+        alt: "Publicidad Clinica veterinaria Hercules",
+      },
+      {
+        id: "pb-11",
+        src: "/img-galeria/publicidad/pb-11.jpg",
+        alt: "Publicidad Clinica veterinaria Hercules",
+      },
+     ],
+     instalaciones:[
+      {
+        id: "i-1",
+        src: "/img-galeria/instalaciones/i-1.jpg",
+        alt: "Nuestras Instalaciones",
+      },
+      {
+        id: "i-2",
+        src: "/img-galeria/instalaciones/i-2.jpg",
+        alt: "Nuestras Instalaciones",
+      },
+      {
+        id: "i-3",
+        src: "/img-galeria/instalaciones/i-3.jpg",
+        alt: "Nuestras Instalaciones",
+      },
+      {
+        id: "i-4",
+        src: "/img-galeria/instalaciones/i-4.jpg",
+        alt: "Nuestras Instalaciones",
+      },
+      {
+        id: "i-5",
+        src: "/img-galeria/instalaciones/i-5.jpg",
+        alt: "Nuestras Instalaciones",
+      },
+      {
+        id: "i-6",
+        src: "/img-galeria/instalaciones/i-6.jpg",
+        alt: "Nuestras Instalaciones",
+      },
+      {
+        id: "i-7",
+        src: "/img-galeria/instalaciones/i-7.jpg",
+        alt: "Nuestras Instalaciones",
+      },
+      {
+        id: "i-8",
+        src: "/img-galeria/instalaciones/i-8.jpg",
+        alt: "Nuestras Instalaciones",
+      },
+      {
+        id: "i-9",
+        src: "/img-galeria/instalaciones/i-9.jpg",
+        alt: "Nuestras Instalaciones",
+      },
+      {
+        id: "i-10",
+        src: "/img-galeria/instalaciones/i-10.jpg",
+        alt: "Nuestras Instalaciones",
+      },
+      {
+        id: "i-11",
+        src: "/img-galeria/instalaciones/i-11.jpg",
+        alt: "Nuestras Instalaciones",
+      },
+      {
+        id: "i-12",
+        src: "/img-galeria/instalaciones/i-11.jpg",
+        alt: "Nuestras Instalaciones",
       },
      ]
-     
    }
    
    export default galeria

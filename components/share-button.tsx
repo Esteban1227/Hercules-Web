@@ -81,7 +81,7 @@ export default function ShareButton({ productName }: ShareButtonProps) {
         <DropdownMenuItem asChild>
           <a href={twitterUrl} target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer">
             <Twitter className="mr-2 h-4 w-4 text-blue-400" />
-            Compartir en Twitter
+            Compartir en Tiktok
           </a>
         </DropdownMenuItem>
         <DropdownMenuItem onClick={copyToClipboard} className="flex items-center cursor-pointer">
