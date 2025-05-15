@@ -169,7 +169,7 @@ const galeria = {
       },
       {
         id: "sv-16",
-        src: "/img-galeria/publicidad/sv-16.jpg",
+        src: "/img-galeria/servicios/sv-16.jpg",
         alt: "Servicio de consulta veterinaria",
       },
      ],
