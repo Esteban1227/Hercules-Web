@@ -16,10 +16,6 @@ export default function Home() {
   const images = [
     "/img-pagina-principal/c-1.jpg",
     "/img-pagina-principal/c-2.png",
-    "/img-pagina-principal/c-3.jpg",
-    "/img-pagina-principal/c-4.jpg",
-    "/img-pagina-principal/c-5.jpg",
-    "/img-pagina-principal/c-6.jpg"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,7 +23,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 20000); // Cambia cada 5 segundos
+    }, 5000); // Cambia cada 5 segundos
 
     return () => clearInterval(interval);
   }, []);
@@ -62,11 +58,11 @@ export default function Home() {
           </div>
           <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
             <Image
-              key={currentIndex} // Para forzar la transición de imagen
+              key={currentIndex}
               src={images[currentIndex]}
               alt={`Imagen ${currentIndex + 1}`}
               fill
-              className="object-contain rounded-lg transition-opacity duration-1000"
+              className="object-cover object-center transition-opacity duration-1000"
             />
           </div>
         </div>
@@ -97,7 +93,7 @@ export default function Home() {
                 <p className="text-gray-600">+57 311 637 0334<br />
                   +57 313 748 0706 <br />
                   +57 311 771 5475 <br />
-                  +57 386 1640 </p>
+                  +602 386 1640 </p>
               </div>
             </CardContent>
           </Card>
@@ -154,7 +150,7 @@ export default function Home() {
           <ServiceCard
             title="Tienda"
             description="Alimentos y productos seleccionados para el cuidado diario de tu mascota."
-            imageUrl="/img-servicios/tienda.jpg?height=200&width=300"
+            imageUrl="/img-servicios/tienda.jpeg?height=200&width=300"
           />
         </div>
 
@@ -191,14 +187,19 @@ export default function Home() {
               </div>
               <p className="text-gray-600 mb-4">
                 "Super recomendados, excelente servicio , calidad humana, lo mejor es que encuentras todo lo que uno necesite para nuestras mascotas.
-Me encantó todo!! Gracias por el servicio prestado 🐶🐱"
+                Me encantó todo!! Gracias por el servicio prestado 🐶🐱"
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden relative">
-                  <Image src="/placeholder.svg?height=40&width=40" alt="Cliente" fill className="object-cover" />
+                  <Image
+                    src="/img-pagina-principal/p-1.png"
+                    alt="Cliente"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div>
-                  <p className="font-medium text-gray-900">Andreita Rincon</p>
+                  <p className="font-medium text-gray-900">Martha Lopez</p>
                 </div>
               </div>
             </CardContent>
@@ -211,14 +212,19 @@ Me encantó todo!! Gracias por el servicio prestado 🐶🐱"
                 ))}
               </div>
               <p className="text-gray-600 mb-4">
-                "Excelente Clínica Veterinaria con 24 horas de servicio de urgencias, muy acertados en sus diagnósticos y con una gran calidad humana. Dios los bendiga."
+                "Un veterinario súper atento y receptivo a las necesidades del paciente. Mi perrita ingreso bastante malita, pero ellos se encargaron de regresarla a su alegría normal. Siempre estuve enterado del proceso con ella!!! Son los mejores!!!!"
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden relative">
-                  <Image src="/placeholder.svg?height=40&width=40" alt="Cliente" fill className="object-cover" />
+                  <Image
+                    src="/img-pagina-principal/p-2.png"
+                    alt="Cliente"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div>
-                  <p className="font-medium text-gray-900">Martha López</p>
+                  <p className="font-medium text-gray-900">Diego Campo</p>
                 </div>
               </div>
             </CardContent>
@@ -235,10 +241,15 @@ Me encantó todo!! Gracias por el servicio prestado 🐶🐱"
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden relative">
-                  <Image src="/placeholder.svg?height=40&width=40" alt="Cliente" fill className="object-cover" />
+                  <Image
+                    src="/img-pagina-principal/p-3.png"
+                    alt="Cliente"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div>
-                  <p className="font-medium text-gray-900">Martha López</p>
+                  <p className="font-medium text-gray-900">Andreita Rincon</p>
                 </div>
               </div>
             </CardContent>

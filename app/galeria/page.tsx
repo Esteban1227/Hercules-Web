@@ -10,19 +10,19 @@ import galeria from "@/data/galeria/galeria"
 
 export default function Galeria() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
-  const { pacientes, servicios } = galeria
+  const { pacientes, servicios, publicidad, instalaciones } = galeria
 
   // Imágenes de ejemplo para cada categoría
   const images = {
     instalaciones: Array.from({ length: 8 }, (_, i) => ({
       id: `instalacion-${i + 1}`,
-      src: "/placeholder.svg?height=400&width=600",
+      src: `/img-galeria/i${i + 1}.jpg`, // Ruta correcta
       alt: `Instalaciones ${i + 1}`,
       caption: `Nuestras modernas instalaciones diseñadas para el confort de tu mascota.`,
     })),
     servicios: Array.from({ length: 6 }, (_, i) => ({
       id: `servicio-${i + 1}`,
-      src: "/placeholder.svg?height=400&width=600",
+      src: `/img-galeria/sv-${i + 1}.jpg`, // Ruta correcta
       alt: `Servicio ${i + 1}`,
       caption: `Servicios profesionales realizados por nuestro equipo de expertos.`,
     })),
@@ -32,15 +32,13 @@ export default function Galeria() {
       alt: `Paciente ${i + 1}`,
       caption: `Nuestros adorables pacientes felices y saludables.`,
     })),
+    publicidad: Array.from({ length: 10 }, (_, i) => ({
+      id: `publicidad-${i + 1}`,
+      src: `/img-galeria/pb${i + 1}.jpg`, // Ruta correcta
+      alt: `Paciente ${i + 1}`,
+      caption: `Anuncios importantes.`,
+    })),
   }
-
-  // Videos de ejemplo
-  const videos = Array.from({ length: 4 }, (_, i) => ({
-    id: `video-${i + 1}`,
-    thumbnail: "/placeholder.svg?height=400&width=600",
-    title: `Video ${i + 1}`,
-    description: `Descripción del video sobre nuestros servicios y cuidados veterinarios.`,
-  }))
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -48,7 +46,7 @@ export default function Galeria() {
         <h1 className="text-4xl font-bold text-indigo-800 mb-4">Galería Multimedia</h1>
         <p className="text-lg text-gray-600">
           Conoce nuestras instalaciones, servicios y a algunos de nuestros pacientes a través de nuestra galería de
-          fotos y videos.
+          fotos.
         </p>
       </div>
 
@@ -72,12 +70,15 @@ export default function Galeria() {
           >
             Instalaciones
           </TabsTrigger>
-          <TabsTrigger value="videos" className="data-[state=active]:bg-indigo-100 data-[state=active]:text-indigo-800">
-            Videos
+          <TabsTrigger 
+            value="publicidad"
+            className="data-[state=active]:bg-indigo-100 data-[state=active]:text-indigo-800"
+          >
+            Publicidad
           </TabsTrigger>
         </TabsList>
 
-        {/* Instalaciones */}
+        {/* Pacientes */}
         <TabsContent value="pacientes">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {pacientes.map((image) => (
@@ -124,7 +125,7 @@ export default function Galeria() {
         {/* Instalaciones */}
         <TabsContent value="instalaciones">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {images.instalaciones.map((image) => (
+            {instalaciones.map((image) => (
               <button
                 key={image.id}
                 className="relative h-64 rounded-lg overflow-hidden cursor-pointer"
@@ -142,24 +143,23 @@ export default function Galeria() {
           </div>
         </TabsContent>
 
-        {/* Videos */}
-        <TabsContent value="videos">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {videos.map((video) => (
-              <div key={video.id} className="rounded-lg overflow-hidden border">
-                <div className="relative h-64">
-                  <Image src={video.thumbnail || "/placeholder.svg"} alt={video.title} fill className="object-cover" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 rounded-full bg-white bg-opacity-80 flex items-center justify-center">
-                      <div className="w-0 h-0 border-t-8 border-t-transparent border-l-16 border-l-teal-600 border-b-8 border-b-transparent ml-1"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <h3 className="font-medium text-lg mb-2">{video.title}</h3>
-                  <p className="text-gray-600">{video.description}</p>
-                </div>
-              </div>
+        {/* Publicidad */}
+        <TabsContent value="publicidad">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {publicidad.map((image) => (
+              <button
+                key={image.id}
+                className="relative h-64 rounded-lg overflow-hidden cursor-pointer"
+                onClick={() => setSelectedImage(image.src)}
+              >
+                <Image
+                  src={image.src || "/placeholder.svg"}
+                  alt={image.alt}
+                  fill
+                  className="object-cover transition-transform hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-opacity" />
+              </button>
             ))}
           </div>
         </TabsContent>

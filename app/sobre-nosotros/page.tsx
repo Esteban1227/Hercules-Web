@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import ContactSection from "@/components/contact-section"
 import ServiceCard from "@/components/service-card"
-import Veterinarians from "@/components/veterinary-equipment"
+import Veterinarians from "@/data/veterinarios/veterinary-equipment"
 
 export default function SobreNosotros() {
   return (
@@ -164,7 +164,7 @@ export default function SobreNosotros() {
            <ServiceCard
             title="Profilaxis dental"
             description="Limpieza y cuidado bucal para prevenir enfermedades dentales."
-            imageUrl="/img-servicios/profilaxis.webp?height=200&width=300"
+            imageUrl="/img-servicios/profilaxis.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
@@ -176,7 +176,7 @@ export default function SobreNosotros() {
           <ServiceCard
             title="Tienda"
             description="Alimentos y productos seleccionados para el cuidado diario de tu mascota."
-            imageUrl="/img-servicios/tienda.jpg?height=200&width=300"
+            imageUrl="/img-servicios/tienda.jpeg?height=200&width=300"
             expanded
           />
           <ServiceCard
@@ -188,6 +188,12 @@ export default function SobreNosotros() {
           <ServiceCard
             title="Urgencias"
             description="Atención inmediata en situaciones críticas."
+            imageUrl="/img-servicios/urgencia.jpg?height=200&width=300"
+            expanded
+          />
+          <ServiceCard
+            title="Guarderia"
+            description="Cuidamos a tu perro con amor y dedicación."
             imageUrl="/img-servicios/urgencia.jpg?height=200&width=300"
             expanded
           />
