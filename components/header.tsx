@@ -27,7 +27,7 @@ export default function Header() {
               <div className="relative h-20 w-20">
                 <Image
                   src="/LogoHercules.png"
-                  alt="Veterinaria PetCare Logo"
+                  alt="Veterinaria Hercules Logo"
                   fill
                   className="object-contain"
                 />
@@ -75,7 +75,7 @@ export default function Header() {
                     <div className="relative h-10 w-10">
                       <Image
                         src="/placeholder.svg?height=40&width=40"
-                        alt="Veterinaria PetCare Logo"
+                        alt="Veterinaria Hercules Logo"
                         fill
                         className="object-contain"
                       />
