@@ -49,7 +49,7 @@ export async function POST(request: Request) {
         <p><strong>Sugerencia:</strong></p>
         <p>${suggestion.replace(/\n/g, "<br>")}</p>
         <hr>
-        <p>Este correo fue enviado desde el formulario de sugerencias de la web de Veterinaria PetCare.</p>
+        <p>Este correo fue enviado desde el formulario de sugerencias de la web de Veterinaria Hercules.</p>
       `,
     }
 

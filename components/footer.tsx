@@ -14,7 +14,7 @@ export default function Footer() {
               <div className="relative h-20 w-20 bg-white rounded-full overflow-hidden">
                 <Image
                   src="/LogoHercules.png"
-                  alt="Veterinaria PetCare Logo"
+                  alt="Veterinaria Hercules Logo"
                   fill
                   className="object-contain"
                 />
@@ -196,7 +196,7 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-indigo-300" />
                 <Link
-                  href="mailto:info@veterinariapetcare.com"
+                  href="mailto:clinicaveterinariahercules@gmail.com"
                   className="text-indigo-100 hover:text-white transition-colors"
                 >
                   clinicaveterinariahercules@gmail.com

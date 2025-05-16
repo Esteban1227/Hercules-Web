@@ -6,6 +6,14 @@ import ServiceCard from "@/components/service-card"
 import Veterinarians from "@/data/veterinarios/veterinary-equipment"
 
 export default function SobreNosotros() {
+
+  const images = [
+    "/img-galeria/instalaciones/i-1.jpg",
+    "/img-galeria/instalaciones/i-2.jpg",
+    "/img-galeria/instalaciones/i-3.jpg",
+    "/img-galeria/instalaciones/i-4.jpg"
+  ];
+
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-3xl mx-auto text-center mb-12">
@@ -202,32 +210,33 @@ export default function SobreNosotros() {
 
       {/* Facilities Gallery Preview */}
       <section className="mb-16">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-indigo-800 mb-4">Nuestras Instalaciones</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-            Contamos con instalaciones modernas y equipadas para ofrecer el mejor servicio a tu mascota.
-          </p>
-        </div>
+      <div className="text-center mb-10">
+        <h2 className="text-3xl font-bold text-indigo-800 mb-4">Nuestras Instalaciones</h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-6">
+          Contamos con instalaciones modernas y equipadas para ofrecer el mejor servicio a tu mascota.
+        </p>
+      </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[1, 2, 3, 4].map((i) => (
-            <div key={i} className="relative h-48 rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=200&width=300"
-                alt={`Instalación ${i}`}
-                fill
-                className="object-cover"
-              />
-            </div>
-          ))}
-        </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {images.map((src, i) => (
+          <div key={i} className="relative h-48 rounded-lg overflow-hidden">
+            <Image
+              src={src}
+              alt={`Instalación ${i + 1}`}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 50vw, 25vw"
+            />
+          </div>
+        ))}
+      </div>
 
-        <div className="text-center mt-6">
-          <a href="/galeria" className="text-indigo-600 hover:text-indigo-700 font-medium">
-            Ver galería completa →
-          </a>
-        </div>
-      </section>
+      <div className="text-center mt-6">
+        <a href="/galeria" className="text-indigo-600 hover:text-indigo-700 font-medium">
+          Ver galería completa →
+        </a>
+      </div>
+    </section>
 
       {/* Contact Section */}
       <ContactSection />

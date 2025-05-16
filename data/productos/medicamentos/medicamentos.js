@@ -3,7 +3,7 @@ const medicamentos = [
     "id": "medicamento-1",
     "name": "Prednizoo",
     "description": "Prednizo es un corticosteroide utilizado en medicina veterinaria para tratar diversas afecciones en perros y gatos, incluyendo enfermedades inflamatorias, alérgicas y autoinmunes. Actúa reduciendo la inflamación y suprimiendo la respuesta inmunitaria. Es importante administrar bajo supervisión veterinaria debido a posibles efectos secundarios y la necesidad de ajustar la dosis según la condición del animal.",
-    "image": "/img-productos/medicamentos/prednizo.png",
+    "image": "/img-productos/medicamentos/prednizoo.png",
     "category": "medicamento"
   },
   {

@@ -10,7 +10,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Veterinaria PetCare - Cuidamos de tus mascotas",
+  title: "Clinica Veterinaria Hercules - Cuidamos de tus mascotas",
   description: "Clínica veterinaria con servicios completos para el cuidado y bienestar de tus mascotas",
     generator: 'v0.dev'
 }
