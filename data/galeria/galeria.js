@@ -172,6 +172,16 @@ const galeria = {
         src: "/img-galeria/servicios/sv-16.jpg",
         alt: "Servicio de consulta veterinaria",
       },
+       {
+        id: "sv-17",
+        src: "/img-galeria/servicios/sv-17.jpg",
+        alt: "Servicio de consulta veterinaria",
+      },
+      {
+        id: "sv-18",
+        src: "/img-galeria/servicios/sv-18.jpg",
+        alt: "Servicio de consulta veterinaria",
+      },
      ],
       publicidad:[
       {
@@ -275,22 +285,7 @@ const galeria = {
         id: "i-9",
         src: "/img-galeria/instalaciones/i-9.jpg",
         alt: "Nuestras Instalaciones",
-      },
-      {
-        id: "i-10",
-        src: "/img-galeria/instalaciones/i-10.jpg",
-        alt: "Nuestras Instalaciones",
-      },
-      {
-        id: "i-11",
-        src: "/img-galeria/instalaciones/i-11.jpg",
-        alt: "Nuestras Instalaciones",
-      },
-      {
-        id: "i-12",
-        src: "/img-galeria/instalaciones/i-11.jpg",
-        alt: "Nuestras Instalaciones",
-      },
+      },  
      ]
    }
    

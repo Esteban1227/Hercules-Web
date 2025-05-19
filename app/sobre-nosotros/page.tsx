@@ -148,7 +148,7 @@ export default function SobreNosotros() {
           <ServiceCard
             title="Vacunación y desparasitacion"
             description="Planes efectivos para mantener a tu mascota protegida y saludable."
-            imageUrl="/img-servicios/desparasitacion.avif?height=200&width=300"
+            imageUrl="/img-servicios/vacunacion.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
@@ -178,7 +178,7 @@ export default function SobreNosotros() {
           <ServiceCard
             title="Peluquería y baño"
             description="Higiene y estética a cargo de profesionales."
-            imageUrl="/img-servicios/baño.jpg?height=200&width=300"
+            imageUrl="/img-servicios/peluqueria.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
@@ -196,13 +196,13 @@ export default function SobreNosotros() {
           <ServiceCard
             title="Urgencias"
             description="Atención inmediata en situaciones críticas."
-            imageUrl="/img-servicios/urgencia.jpg?height=200&width=300"
+            imageUrl="/img-servicios/urgencias.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
             title="Guarderia"
             description="Cuidamos a tu perro con amor y dedicación."
-            imageUrl="/img-servicios/urgencia.jpg?height=200&width=300"
+            imageUrl="/img-servicios/guarderia.jpg?height=200&width=300"
             expanded
           />
         </div>
