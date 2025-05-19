@@ -130,7 +130,7 @@ export default function Home() {
           <ServiceCard
             title="Vacunación y desparasitación"
             description="Planes efectivos para mantener a tu mascota protegida y saludable."
-            imageUrl="/img-servicios/desparasitacion.avif?height=200&width=300"
+            imageUrl="/img-servicios/vacunacion.jpg?height=200&width=300"
           />
           <ServiceCard
             title="Cirugías"
@@ -145,7 +145,7 @@ export default function Home() {
           <ServiceCard
             title="Peluquería y baño medicado"
             description="Higiene y estética a cargo de profesionales."
-            imageUrl="/img-servicios/baño.jpg?height=200&width=300"
+            imageUrl="/img-servicios/peluqueria.jpg?height=200&width=300"
           />
           <ServiceCard
             title="Tienda"
