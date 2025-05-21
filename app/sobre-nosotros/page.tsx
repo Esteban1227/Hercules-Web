@@ -196,7 +196,7 @@ export default function SobreNosotros() {
           <ServiceCard
             title="Urgencias"
             description="Atención inmediata en situaciones críticas."
-            imageUrl="/img-servicios/urgencias.jpg?height=200&width=300"
+            imageUrl="/img-servicios/urg.jpg?height=200&width=300"
             expanded
           />
           <ServiceCard
