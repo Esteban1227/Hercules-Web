@@ -2,14 +2,14 @@ const medicamentos = [
   {
     "id": "medicamento-1",
     "name": "Prednizoo",
-    "description": "Prednizo es un corticosteroide utilizado en medicina veterinaria para tratar diversas afecciones en perros y gatos, incluyendo enfermedades inflamatorias, alérgicas y autoinmunes. Actúa reduciendo la inflamación y suprimiendo la respuesta inmunitaria. Es importante administrar bajo supervisión veterinaria debido a posibles efectos secundarios y la necesidad de ajustar la dosis según la condición del animal.",
+    "description": "Prednizo es un corticosteroide utilizado en medicina veterinaria para tratar diversas afecciones en perros y gatos, incluyendo enfermedades inflamatorias, alérgicas y autoinmunes. Actúa reduciendo la inflamación y suprimiendo la respuesta inmunitaria.",
     "image": "/img-productos/medicamentos/prednizoo.png",
     "category": "medicamento"
   },
   {
     "id": "medicamento-2",
     "name": "Canisan-D",
-    "description": "Canisan-F es un antiparasitario de amplio espectro para perros y gatos, formulado con albendazol y prazicuantel. Eficaz contra nematodos, cestodos y algunos protozoarios, actúa destruyendo los microtúbulos de las células intestinales de los parásitos, lo que conduce a su eliminación. Ideal para el tratamiento y prevención de parasitosis gastrointestinales.",
+    "description": "Canisan-F es un antiparasitario de amplio espectro para perros y gatos, formulado con albendazol y prazicuantel. Eficaz contra nematodos, cestodos y algunos protozoarios, actúa destruyendo los microtúbulos de las células intestinales de los parásitos.",
     "image": "/img-productos/medicamentos/canisan.webp",
     "category": "medicamento"
   },

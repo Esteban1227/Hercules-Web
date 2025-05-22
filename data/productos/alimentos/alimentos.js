@@ -3,7 +3,7 @@ const alimentos = [
     id: "alimento-1",
     name: "Monello Gato Adulto",
     description:
-      "Alimento completo y equilibrado para gatos adultos, con ingredientes de alta calidad que promueven una digestión saludable, pelaje brillante y bienestar general.",
+      "Monello Gatos Adultos Salmón y Pollo fue pensada para agradar al paladar exigente de los felinos y proveer los nutrientes necesarios para una vida más activa y sana. La fórmula cuenta con la adición de ingredientes de calidad superior, como la harina y el aceite de salmón, que ayudan en el mantenimiento del sistema cognitivo, y aumenta el bienestar en el cotidiano.",
     image: "/img-productos/alimentos/monello-gato.png",
     category: "alimentos",
   },
@@ -11,7 +11,7 @@ const alimentos = [
     id: "alimento-2",
     name: "Monello Gatito",
     description:
-      "Nutrición completa para gatitos, con DHA, vitaminas y minerales que apoyan el desarrollo cerebral, visual y del sistema inmune.",
+      "Monello Cat Gatitos Salmón y Pollo es libre de colorantes y aromatizantes artificiales, con la adición de harina y aceite de salmón, ingredientes nobles y de excelencia que actúan en las defensas del organismo y proporcionan a los felinos un desarrollo cognitivo sano.",
     image: "/img-productos/alimentos/monello-gatito.webp",
     category: "alimentos",
   },
@@ -19,7 +19,7 @@ const alimentos = [
     id: "alimento-3",
     name: "Monello Gato Castrado",
     description:
-      "Alimento formulado para gatos esterilizados, ayuda a controlar el peso y favorece la salud urinaria con un sabor irresistible.",
+      "Monello Gatos Castrados Pavo y Salmón está desarrollada especialmente para la etapa post castración de los felinos, cuando suelen reducir el ritmo de las actividades, y quedan más propensos a la obesidad. Por eso, la fórmula tiene calorías reducidas y la adición de L-carnitina, una sustancia que actúa en la transformación de la grasa en energía.",
     image: "/img-productos/alimentos/monello-castrado.jpg",
     category: "alimentos",
   },
@@ -27,7 +27,7 @@ const alimentos = [
     id: "alimento-4",
     name: "Monello Gato Bola de Pelo",
     description:
-      "Ideal para gatos propensos a formar bolas de pelo. Contiene fibras especiales que favorecen la eliminación natural del pelo ingerido.",
+      "Monello Gatos Adultos Bolas de Pelos Pollo y Pescado es un alimento desarrollado para las mascotas que tienen problemas con la ingestión de pelos. La presencia de celulosa ayuda a eliminar las bolas de pelos y evita que sean repelidas por el vómito o que queden trancadas en el intestino de los gatos. ",
     image: "/img-productos/alimentos/monello-bola.webp",
     category: "alimentos",
   },
@@ -35,7 +35,7 @@ const alimentos = [
     id: "alimento-5",
     name: "Monello Razas Pequeñas",
     description:
-      "Fórmula especial para perros de razas pequeñas, con croquetas adaptadas, alto valor nutricional y sabor irresistible para una vida activa y saludable.",
+      "Monello Perros Adultos Razas Pequeñas Pollo proporciona más longevidad a los peludos. Con adición de linaza, aceite de oliva y aceite de girasol, el alimento es rico en antioxidantes que combaten los radicales libres y previenen el envejecimiento, lo cual aumenta el bienestar y la vitalidad de las mascotas. Los ingredientes también son esenciales para promover la belleza y la salud de la piel y del pelo de los perros.",
     image: "/img-productos/alimentos/monello-razas.png",
     category: "alimentos",
   },
@@ -43,7 +43,7 @@ const alimentos = [
     id: "alimento-6",
     name: "Monello Tradicional",
     description:
-      "Alimento balanceado para perros adultos, con proteínas de calidad, vitaminas y minerales para una nutrición completa y sabrosa.",
+      "Monello Perros Adultos Tradicional Pollo tiene digestibilidad superior a 80%, lo que significa que proporciona aún más energía y vitalidad a las mascotas. Con más aprovechamiento del alimento, gracias al uso de proteínas de calidad y la adición de manano-oligosacáridos (MOS), prebiótico que actúa en la salud intestinal al asegurar la máxima absorción de los nutrientes, la fórmula proporciona un desarrollo más sano a la mascota.",
     image: "/img-productos/alimentos/monello-tradicional.png",
     category: "alimentos",
   },
@@ -51,7 +51,7 @@ const alimentos = [
     id: "alimento-7",
     name: "Monello Cachorro",
     description:
-      "Fórmula especial para cachorros en crecimiento, con nutrientes esenciales para el desarrollo saludable de huesos, músculos y defensas.",
+      "Monello Dog Cachorros Pollo presenta beneficios para el desarrollo equilibrado y sano de los peluditos. Cuenta con la adición del extracto de Yucca Schidigera y del manano-oligosacárido (MOS), que actúan directamente en el mantenimiento de la flora intestinal, lo cual promueve más absorción y, consecuentemente, un máximo aprovechamiento de los nutrientes, minerales y proteínas por el organismo de los cachorros. ",
     image: "/img-productos/alimentos/monello-cachorro.png",
     category: "alimentos",
   },
@@ -59,7 +59,7 @@ const alimentos = [
     id: "alimento-8",
     name: "Agility Gold Gato Adulto",
     description:
-      "Alimento premium para gatos adultos, con proteínas de alta calidad, omega 3 y 6 para un pelaje saludable y control de bolas de pelo.",
+      "Agility Gold Gatos, es una línea de alimentos súper premium, fabricados con la mejor tecnología que existe hoy en el mercado internacional. con seleccionados ingredientes, incluyendo como principal ingrediente carne real de pollo, salmón y cordero.",
     image: "/img-productos/alimentos/agility-gato.jpg",
     category: "alimentos",
   },
@@ -67,7 +67,7 @@ const alimentos = [
     id: "alimento-9",
     name: "Agility Gold Gatito",
     description:
-      "Nutrición completa para gatitos en crecimiento, con DHA para el desarrollo cerebral y visual, y proteínas de fácil digestión.",
+      "Agility Gold Gatitos, es una línea de alimentos súper premium, perfecto para controlar las bolas de pelo de tu gato, ideal para gatitos destetos de todas las razas y como complemento a la leche materna.",
     image: "/img-productos/alimentos/agility-gatitos.webp",
     category: "alimentos",
   },
@@ -75,38 +75,38 @@ const alimentos = [
     id: "alimento-10",
     name: "Agility Gold Pequeños adultos",
     description:
-      "Fórmula balanceada para perros adultos de razas pequeñas, con croquetas adaptadas, energía concentrada y excelente sabor.",
+      "Agility Gold Pequeños Adultos, ayuda al correcto funcionamiento del aparato digestivo, adecuado funcionamiento del metabolismo y aporte de energía, mejora la consistencia y el olor de las heces, garantiza la salud del pelo y la piel.",
     image: "/img-productos/alimentos/agility-pequeños-adultos.jpg",
     category: "alimentos",
   },
   {
     id: "alimento-11",
-    name: "Agility Gold Pequeños adultos piel",
+    name: "Agility Gold Piel Pequeños Adultos",
     description:
-      "Especial para perros de razas pequeñas con piel sensible. Contiene ácidos grasos esenciales y nutrientes que cuidan la piel y el pelaje.",
+      "Agility Gold Piel Pequeños Adultos, es un alimento de alta calidad con utilización de algas marinas para potencializar acciones en la hidratación de la piel y aceites botánicos de Romero que evitan el envejecimiento celular dando fuerza y brillo al pelaje.",
     image: "/img-productos/alimentos/agility-pequeños-adultos-piel.webp",
     category: "alimentos",
   },{
     id: "alimento-12",
-    name: "Agility Gold grandes adultos piel",
+    name: "Agility Gold Grandes Adultos Piel",
     description:
-      "Desarrollado para perros grandes con piel sensible. Refuerza la barrera cutánea y aporta brillo y salud al pelaje con omega 3 y 6.",
+      "Agility Gold Piel Grandes Adultos, es una línea de alimentos súper premium, fabricados con la mejor tecnología que existe hoy en el mercado internacional. con seleccionados ingredientes, incluyendo como principal ingrediente carne real de pollo, salmón y cordero. ",
     image: "/img-productos/alimentos/agility-grandes-adultos-piel.jpg",
     category: "alimentos",
   },
   {
     id: "alimento-13",
-    name: "Agility Gold grandes cachorros",
+    name: "Agility Gold Grandes Cachorros",
     description:
-      "Alimento para cachorros de razas grandes, con fórmula especializada que apoya el crecimiento óseo, muscular y el sistema inmunológico.",
+      "Agility Gold grandes cachorros, está diseñado para nutrir adecuadamente a cachorros de razas grandes y gigantes. Estos tienen un metabolismo más lento, su crecimiento es igual, por tanto, se debe tener una nutrición alineada a esta condición.",
     image: "/img-productos/alimentos/agility-grandesc.jpg",
     category: "alimentos",
   },
   {
     id: "alimento-14",
-    name: "Agility Gold pequeños cachorros",
+    name: "Agility Gold Pequeños Cachorros",
     description:
-      "Nutrición ideal para cachorros de razas pequeñas, con DHA, proteínas y minerales que fortalecen su desarrollo desde los primeros meses.",
+      "Agility Gold pequeños cachorros, está diseñado para nutrir adecuadamente a cachorros de razas pequeñas. Su metabolismo o catabolismo es alto, ellos crecen con mayor velocidad, normalmente a los 9-10 meses ya son adultos. Si son razas muy pequeñas, son adultos más rápido.",
     image: "/img-productos/alimentos/agility-pequeños-cachorro.jpg",
     category: "alimentos",
   },
@@ -114,7 +114,7 @@ const alimentos = [
     id: "alimento-15",
     name: "Max Cat Adulto",
     description:
-      "Alimento completo para gatos adultos, con proteínas de alta calidad, omega 3 y 6 y taurina para un corazón sano y pelaje brillante.",
+      "Trae ingredientes seleccionados por especialistas para proporcionarle una alimentación rica y balanceada a tu gatito. Es rico en proteína y vitaminas A, B12, C y D, este alimento ayuda directamente en el tracto urinario, en la visión y en el corazón de tu compañero, a tu hijo felino le va a encantar, permite una reducción del olor de las heces, no tiene colorantes lo que es mejor para su salud, mantiene al día su organismo y es suave para masticar.",
     image: "/img-productos/alimentos/max-cat-adulto.webp",
     category: "alimentos",
   },
@@ -122,7 +122,7 @@ const alimentos = [
     id: "alimento-16",
     name: "Max Cat Castrado",
     description:
-      "Fórmula especial para gatos esterilizados, ayuda a mantener el peso ideal y favorece la salud del tracto urinario.",
+      "Max es un concentrado Premium Especial cuya fórmula proporcionará una alimentación completa y fue especialmente diseñada para evitar el aumento de peso en gatos que hayan sido castrados. Contiene especiales nutrientes que favorecerán la salud del tracto urinario y que además le brindarán la especial nutrición que necesita",
     image: "/img-productos/alimentos/max-cat-castrado.webp",
     category: "alimentos",
   },
@@ -130,7 +130,7 @@ const alimentos = [
     id: "alimento-17",
     name: "Max Cat Gatitos",
     description: 
-      "Nutrición balanceada para gatitos, con DHA para el desarrollo cognitivo y visual, y proteínas que fortalecen el crecimiento.",
+      "Este alimento es rico en proteína y vitaminas, es tu oportunidad de invertir en la máxima calidad para tu compañero para una vida sana y feliz. Cuenta con un sabor especial de salmón y arroz, el alimento Max Cat Adultos Salmón & Arroz es producido sin adición de colorantes y reduce el olor de las heces de tu amigo.",
     image: "/img-productos/alimentos/max-cat-gatito.webp",
     category: "alimentos",
   },
@@ -138,7 +138,7 @@ const alimentos = [
     id: "alimento-18",
     name: "Max Adulto",
     description:
-      "Alimento equilibrado para perros adultos, con proteínas de origen animal, vitaminas y minerales que promueven vitalidad y bienestar.",
+      "Performance de Max es un concentrado con rico sabor que aportará una nutrición completa y balanceada. Su fórmula posee ingredientes más naturales, libres de  colorantes y sabores artificiales. Es un concentrado cuyo objetivo principal es reforzar la vitalidad de los perros adultos, manteniéndolos activos y llenos de energía.",
     image: "/img-productos/alimentos/max-adulto.webp",
     category: "alimentos",
   },
@@ -146,7 +146,7 @@ const alimentos = [
     id: "alimento-19",
     name: "Max Cachorro",
     description:
-      "Alimento completo para cachorros en etapa de crecimiento. Enriquecido con DHA, proteínas de alta calidad y calcio para un desarrollo saludable de huesos, músculos y sistema inmunológico.",
+      "El concentrado para perros cachorros Max Professional Line Performance con sabor a cordero, pollo y arroz será el alimento ideal para proporcionar una alimentación completa y adecuada a perros cachorros en etapa de crecimiento. Su fórmula creada especialmente para esta importante etapa de desarrollo cuenta con proteínas seleccionadas de alta calidad, fuentes de ácidos grasos que serán ideales para fortalecer los músculos durante el crecimiento y la salud de la piel y del pelaje.",
     image: "/img-productos/alimentos/max-cachorro.webp",
     category: "alimentos",
   },
@@ -154,7 +154,7 @@ const alimentos = [
     id: "alimento-20",
     name: "Max Adulto Razas pequeñas",
     description: 
-      "Fórmula adaptada para perros de razas pequeñas, con croquetas pequeñas, alta palatabilidad y nutrientes que favorecen su metabolismo activo.",
+      "Max razas pequeñas para perro es un concentrado rico sabor a pollo que aportará una nutrición óptima y balanceada. Su fórmula posee ingredientes naturales, libres de  colorantes, sabores y aromas artificiales. Su objetivo principal es reforzar la vitalidad de los perros adultos de razas pequeñas, manteniéndolos activos y llenos de energía para correr jugar y hacer lo que más les gusta. ",
     image: "/img-productos/alimentos/max-razas.webp",
     category: "alimentos",
   },
@@ -162,7 +162,7 @@ const alimentos = [
     id: "alimento-21",
     name: "Max Light",
     description: 
-      "Especial para perros con sobrepeso o baja actividad física. Bajo en calorías, con fibras que aportan saciedad y control de peso.",
+      "Light de Max es un concentrado que proporcionará una nutrición completa y balanceada pero con menos calorías. Está fórmula fue especialmente creada para controlar el peso y prevenir la obesidad en los perros, pues esto será la base para llevar una buena salud. Su fórmula cuenta con cantidades óptimas de fibra para favorecer la digestión.",
     image: "/img-productos/alimentos/max-light.jpg",
     category: "alimentos",
   },
@@ -170,7 +170,7 @@ const alimentos = [
     id: "alimento-22",
     name: "Alpo",
     description:
-      "Alpo ofrece un alimento completo y balanceado para perros adultos que disfrutan del sabor a carne real. Con vitaminas, minerales y proteínas esenciales, fortalece músculos y huesos, a la vez que satisface el apetito de los más exigentes. Su fórmula proporciona energía y vitalidad para perros activos.",
+      "Alpo ofrece un alimento completo y balanceado para perros adultos que disfrutan del sabor a carne real.",
     image: "/img-productos/alimentos/alpo.png",
     category: "alimentos",
   },
@@ -178,7 +178,7 @@ const alimentos = [
     id: "alimento-23",
     name: "Cat Chow",
     description:
-      "Cat Chow es una línea de alimentos secos y húmedos formulados para la nutrición integral de los gatos. Contiene defensas naturales, prebióticos y proteínas que fortalecen su sistema inmunológico, promueven la salud digestiva y mantienen el pelaje brillante. Está disponible en versiones para gato adulto y gatito.",
+      "Con Cat Chow, construyes un escudo de protección alrededor de tu gato todos los días, mientras él disfruta de su delicioso sabor. Protección para una vida mejor. Una buena nutrición es fundamental para proteger la salud de los gatos.",
     image: "/img-productos/alimentos/cat-chow.webp",
     category: "alimentos",
   },
@@ -186,7 +186,7 @@ const alimentos = [
     id: "alimento-24",
     name: "Chunky Gato Adulto",
     description:
-      "Alimento balanceado para gatos adultos, con proteínas de calidad, omega 3 y 6, y taurina para una vida saludable y un pelaje brillante.",
+      "El concentrado para Gatos Adultos Chunky con sabor a Salmón y a cordero es un concentrado fabricado con carne real que aportará los niveles de proteína adecuados para mantener la masa muscular magra y el sabor palatable que a los gatos tanto les gusta. ",
     image: "/img-productos/alimentos/chunky-gato.jpg",
     category: "alimentos",
   },
@@ -194,7 +194,7 @@ const alimentos = [
     id: "alimento-25",
     name: "Chunky Gatitos",
     description:
-      "Especialmente formulado para gatitos. Contiene DHA, proteínas y calcio para apoyar el desarrollo cognitivo, óseo y muscular.",
+      "Chunky Gatitos es un concentrado para gatitos o gatos bebes con rico sabor a pollo y a cordero. Está fabricado con carne de verdad y tiene altos niveles de proteínas y nutrientes para contribuir a una alimentación completa y adecuada durante esta etapa en la cual los aspectos más importantes son el crecimiento y el correcto desarrollo del organismo. ",
     image: "/img-productos/alimentos/chunky-gatito.jpg",
     category: "alimentos",
   },
@@ -202,7 +202,7 @@ const alimentos = [
     id: "alimento-26",
     name: "Chunky Adulto",
     description:
-      "Alimento completo para perros adultos, con delicioso sabor a pollo, proteínas de alta calidad y nutrientes esenciales para mantener su vitalidad.",
+      "El concentrado para perros adultos Chunky con sabor a pollo y arroz será una excelente opción de alimentación saludable para tu perro. Su fuente principal de proteína viene del pollo y es un alimento fabricado  bajo exigentes normas de calidad que proporcionará una nutrición completa y balanceada a tu perro adulto. ",
     image: "/img-productos/alimentos/chunky-perro.webp",
     category: "alimentos",
   },
@@ -210,7 +210,7 @@ const alimentos = [
     id: "alimento-27",
     name: "Chunky Adulto Razas Pequeñas",
     description:
-      "Fórmula adaptada a perros de razas pequeñas, con croquetas pequeñas, alta palatabilidad y nutrientes que cuidan su piel, pelaje y energía diaria.",
+      "El concentrado para perros adultos de razas pequeñas Chunky es un alimento ideal para contribuir a una alimentación completa y balanceada que proporcionará los nutrientes adecuados para mantenerlos sanos y activos. Ya que las necesidades nutricionales de los perros de razas pequeñas tienden a ser diferentes, pues por lo general sus estómagos son más sensibles y pequeños.",
     image: "/img-productos/alimentos/chunky-razas.webp",
     category: "alimentos",
   },
@@ -218,7 +218,7 @@ const alimentos = [
     id: "alimento-28",
     name: "Chunky Cordero",
     description:
-      "Ideal para perros adultos con sensibilidad alimentaria. Contiene cordero como fuente alternativa de proteína, favoreciendo una digestión suave y saludable.",
+      "El concentrado para perros adultos Chunky con sabor a Cordero, arroz y salmón es un concentrado fabricado con carne de verdad y apto para perros adultos de todas las razas. Además, cuenta con ingredientes no alérgicos ideal para aquellos perros con estómagos y pieles sensibles, como el cordero y el salmón que eliminan la posibilidad de irritación y reacciones alérgicas que se pueden presentar en algunos perros frente a otros ingredientes comunes presentes en concentrados regulares.",
     image: "/img-productos/alimentos/chunky-cordero.png",
     category: "alimentos",
   },
@@ -226,7 +226,7 @@ const alimentos = [
     id: "alimento-29",
     name: "Chunky Cachorro",
     description:
-      "Nutrición completa para cachorros en crecimiento. Con DHA, vitaminas y minerales que fortalecen el desarrollo físico y mental desde los primeros meses.",
+      "El concentrado para perros cachorros de Chunky con sabor a pollo y arroz es un alimento especialmente creado para suplir las necesidades nutricionales de perros cachorros en etapa de crecimiento. Este concentrado tiene un alto nivel de proteína proveniente de carne de pollo real.",
     image: "/img-productos/alimentos/chunky-cachorro.webp",
     category: "alimentos",
   },
@@ -234,7 +234,7 @@ const alimentos = [
     id: "alimento-30",
     name: "Dog Chow",
     description:
-      "Dog Chow proporciona una nutrición completa con un enfoque en la salud digestiva y el sistema inmune. Con prebióticos naturales, proteínas de calidad y sin colorantes artificiales, ayuda a mantener los perros sanos y activos. Ofrece opciones específicas para cada etapa: cachorros, adultos, senior, razas pequeñas y grandes.\nPresentación: 475g, 1kg, 2kg, 8kg.",
+      "Dog Chow proporciona nutrientes e ingredientes de calidad a la dieta de tu perro con el fin de ayudar a mantenerlo saludable y con más vitalidad para disfrutar de su día a día con más energía por muchos años.",
     image: "/img-productos/alimentos/dog-chow.png",
     category: "alimentos",
   },
@@ -242,7 +242,7 @@ const alimentos = [
     id: "alimento-31",
     name: "Dogourmet",
     description:
-      "Dogourmet es una opción nutritiva y deliciosa para perros adultos y cachorros. Con una combinación de proteínas, cereales y vegetales, ofrece una fórmula balanceada que cuida la salud digestiva, el sistema inmunológico y el brillo del pelaje. Es ideal para dueños que buscan calidad a un buen precio. Está disponible en diversos sabores como carne a la parrilla, parrilla mixta, Salmón y carne, 3 cereales, carne-cereales y leche deslactosada, pollo y pavo.\nPresentación: 350g, 1kg, 2kg, 9kg, 25kg",
+      "Dogourmet es una opción nutritiva y deliciosa para perros adultos y cachorros. Con una combinación de proteínas, cereales y vegetales, ofrece una fórmula balanceada que cuida la salud digestiva, el sistema inmunológico y el brillo del pelaje. Es ideal para dueños que buscan calidad a un buen precio. Está disponible en diversos sabores como carne a la parrilla, parrilla mixta, Salmón y carne, 3 cereales, carne-cereales y leche deslactosada, pollo y pavo.",
     image: "/img-productos/alimentos/dogourmet.jpg",
     category: "alimentos",
   },
@@ -250,7 +250,7 @@ const alimentos = [
     id: "alimento-32",
     name: "Don Kat",
     description:
-      "Don Kat es un alimento económico y completo para gatos, que ofrece una nutrición básica para el mantenimiento diario. Enriquecido con vitaminas, minerales y taurina, ayuda al cuidado visual y del corazón. Agradable al paladar felino y accesible para todos los bolsillos.\nPresentación: 500g, 1kg, 7kg, 16kg",
+      "Alimento completo diseñado para gatos adultos de todas las razas. Se produce a través del proceso de molienda, mezcla y extrusión de ingredientes de origen animal y vegetal, y se enriquece con vitaminas y minerales.",
     image: "/img-productos/alimentos/don-kat.webp",
     category: "alimentos",
   },
@@ -258,7 +258,7 @@ const alimentos = [
     id: "alimento-33",
     name: "Excellent Skin Care",
     description:
-      "Excellent Skin Care es un alimento premium para perros con piel sensible, alergias o problemas dermatológicos. Su fórmula contiene ácidos grasos Omega 3 y 6, proteínas de alta digestibilidad y nutrientes esenciales que fortalecen la barrera cutánea, reducen la irritación y mejoran visiblemente la salud del pelaje. Perfecto para perros que requieren una dieta que cuide su piel desde el interior.\nPresentación: 3kg",
+      "Alimento completo o balanceado para perros adultos de todos los tamaños con piel sensible. Aporta múltiples beneficios, científicamente comprobados que provienen de componentes de alta calidad. Tamaño de la mascota: Todos los Tamaños. Etapa de la vida: Adulto.",
     image: "/img-productos/alimentos/excellent-skin.webp",
     category: "alimentos",
   },
@@ -266,7 +266,7 @@ const alimentos = [
     id: "alimento-34",
     name: "Excellent Urinary",
     description:
-      "Excellent Urinary es un alimento especializado para gatos formulado para mantener la salud del sistema urinario. Ayuda a prevenir la formación de cálculos y cristales, gracias a su equilibrio óptimo de minerales y su aporte controlado de magnesio. Ideal para gatos con antecedentes de afecciones urinarias o como dieta de mantenimiento. Su fórmula también promueve una hidratación adecuada y una digestión saludable.\nPresentación: 1kg, 3kg",
+      "Excellent Urinary ofrece una nutrición especializada para los gatos con un sistema urinario sensible, formulada a base de proteínas de alta digestibilidad, para ayudar a mantener el tracto urinario saludable y colaborar en reducir la formación de cristales en la orina.",
     image: "/img-productos/alimentos/excellent-urinary.webp",
     category: "alimentos",
   },
@@ -274,7 +274,7 @@ const alimentos = [
     id: "alimento-35",
     name: "Felix",
     description:
-      "Felix Triple Delicious es un alimento húmedo irresistible para gatos, con trocitos jugosos en salsa y tres tipos de proteínas por porción. Su sabor variado y textura tierna hacen del momento de la comida una experiencia deliciosa y nutritiva. Ideal para gatos exigentes.\n\tPresentación: 500g, 1.5kg",
+      "Alimento balanceado completo para gatos adultos de todas las razas",
     image: "/img-productos/alimentos/felix.webp",
     category: "alimentos",
   },
@@ -282,15 +282,15 @@ const alimentos = [
     id: "alimento-36",
     name: "Hill's Gato",
     description:
-      "Hill's también cuenta con fórmulas especializadas para gatos, desarrolladas científicamente para atender necesidades nutricionales específicas. Su línea Prescription Diet abarca soluciones para afecciones renales, digestivas, urinarias, articulares, control de peso y otros trastornos. Es una opción de alta calidad veterinaria para el tratamiento clínico a través de la dieta.",
+      "Hill's también cuenta con fórmulas especializadas para gatos, desarrolladas científicamente para atender necesidades nutricionales específicas.",
     image: "/img-productos/alimentos/hills-gato.jpg",
     category: "alimentos",
   },
   {
     id: "alimento-37",
-    name: "Hill's",
+    name: "Hill's Dog",
     description:
-      "Hill's es una marca reconocida por sus fórmulas científicamente desarrolladas para perros con necesidades nutricionales específicas. Su línea Prescription Diet incluye productos para el manejo de problemas renales, digestivos, urinarios, articulares, de peso y más. Ofrece alta calidad veterinaria, ideal para el manejo clínico mediante la alimentación.",
+      "Hill's es una marca reconocida por sus fórmulas científicamente desarrolladas para perros con necesidades nutricionales específicas.",
     image: "/img-productos/alimentos/hills.jpg",
     category: "alimentos",
   },
@@ -298,7 +298,7 @@ const alimentos = [
     id: "alimento-38",
     name: "Mirringo",
     description:
-      "Mirringo es una opción económica y balanceada para gatos, enriquecida con vitaminas, minerales y taurina para una vida sana y activa. Con sabor a carne y pescado, su fórmula favorece la digestión, fortalece defensas y cuida el pelaje. Disponible en presentaciones para gatitos y adultos.\nPresentación: 500g, 1kg, 8kg",
+      "Mirringo es un alimento completa y equilibrada, diseñado para cubrir cada uno de los requerimientos esenciales en su proceso de mantenimiento y desarrollo.",
     image: "/img-productos/alimentos/mirringo.webp",
     category: "alimentos",
   },
@@ -306,7 +306,7 @@ const alimentos = [
     id: "alimento-39",
     name: "Nutre Can",
     description:
-      "Nutre Can es un alimento completo para perros, formulado para brindar energía, salud digestiva y nutrición diaria. Contiene vitaminas, minerales y proteínas que ayudan al desarrollo muscular y fortalecimiento del sistema inmunológico. Disponibles para perros adultos, cachorros y razas pequeñas, razas medianas, grandes y senior.\nPresentaciones: 500g, 800g, 2kg",
+      "Nutrecan - Alimento Perros Adultos, es un alimento 100% completo y balanceado, que ha sido formulado con ingredientes de alta calidad para mantener en estado óptimo la salud de tu perro adulto. ayuda a mantener una piel sana, gracias a sus ácidos grasos esenciales omega 6 y 3, y a la mezcla de vitaminas a y e más zinc.",
     image: "/img-productos/alimentos/nutre-can.webp",
     category: "alimentos",
   },
@@ -314,7 +314,7 @@ const alimentos = [
     id: "alimento-40",
     name: "Oh Mai Gat",
     description:
-      "Oh Mai Gat es un alimento húmedo gourmet para gatos, elaborado con trozos reales de carne o pescado en salsa. Su textura y sabor lo hacen altamente apetecible, ideal para complementar la dieta diaria o consentir a tu felino. Contiene taurina y nutrientes esenciales para su bienestar. Presentación para gatos inquietos y aventureros, juguetones y exploradores, sedentarios y territoriales, caseros y delicados.\nPresentaciones: 200g, 500g, 1.5kg, 8kg",
+      "Oh Mai Gat es un alimento basado en los rasgos particulares de tu gato, que además de deleitar su paladar con su exquisita combinación de ingredientes, le aporta el balance de nutrientes ideal para su personalidad que lo mantendrá enérgico.",
     image: "/img-productos/alimentos/oh-mai-gat.png",
     category: "alimentos",
   },
@@ -322,7 +322,7 @@ const alimentos = [
     id: "alimento-41",
     name: "ProPlan Gato",
     description:
-      "ProPlan, desarrollado por Purina con respaldo veterinario, brinda nutrición avanzada para gatos. Sus fórmulas se adaptan a cada etapa de vida, tamaño o necesidad específica, como sensibilidad digestiva, control de peso o soporte renal. Ofrece excelente sabor, fácil digestión y beneficios comprobables en la salud del gato.\nPresentación: 1.5kg",
+      "ProPlan para gatos adultos es un alimento completo y equilibrado que proporciona la nutrición adecuada para potenciar los sistemas de protección naturales del gato y le permitirá mantener una óptima condición física.",
     image: "/img-productos/alimentos/proplan-gato.jpg",
     category: "alimentos",
   },
@@ -330,7 +330,7 @@ const alimentos = [
     id: "alimento-42",
     name: "ProPlan Perro",
     description:
-      "Desarrollado por Purina con respaldo veterinario, ProPlan ofrece nutrición avanzada para perros. Cada fórmula está diseñada según la edad, tamaño, raza o necesidad especial, como digestión sensible, control de peso o cuidado renal. Se destaca por su alta palatabilidad, digestibilidad y resultados visibles en la salud del perro.\nPresentación: 1 kg, 2 kg, 3 kg",
+      "Purina Pro Plan Adult es un alimento con Spirulina, que satisface las necesidades de las necesidades metábolicas de los perros adultos de razas pequeñas, refuerza el sistema inmune, fortalece la microfila intestinal y refuerza la barrera cutánea.",
     image: "/img-productos/alimentos/proplan-perro.webp",
     category: "alimentos",
   },
@@ -338,7 +338,7 @@ const alimentos = [
     id: "alimento-43",
     name: "Q-ida Cat",
     description:
-      "Qida Cat es una marca de alimento húmedo de alta calidad para gatos, que combina carne real y recetas formuladas para una nutrición equilibrada. Aporta hidratación, mejora la digestión y es ideal para gatos exigentes o con dieta mixta.\nPresentación: 500g, 8kg",
+      "Qida Cat es una marca de alimento húmedo de alta calidad para gatos, que combina carne real y recetas formuladas para una nutrición equilibrada. Aporta hidratación, mejora la digestión y es ideal para gatos exigentes o con dieta mixta.",
     image: "/img-productos/alimentos/qida-cat.jpg",
     category: "alimentos",
   },
@@ -346,7 +346,7 @@ const alimentos = [
     id: "alimento-44",
     name: "Ringo",
     description:
-      "Ringo ofrece nutrición esencial a un precio accesible, ideal para perros activos. Su fórmula balanceada con proteínas, vitaminas y minerales contribuye al mantenimiento de músculos fuertes, dientes sanos y pelaje brillante. Disponible para cachorro y adulto.\nPresentación: 500g, 1kg, 2kg, 30kg",
+      "Ringo Adulto, satisface las necesidades nutricionales de los perros adultos. Es un alimento apto para perros de todas las razas, especialmente aquellos dedicados a las tareas del campo, ya que es una buena fuente de energía. Tamaño de la mascota: Todos los Tamaños. Etapa de la vida: Adulto.",
     image: "/img-productos/alimentos/ringo.png",
     category: "alimentos",
   },
@@ -354,7 +354,7 @@ const alimentos = [
     id: "alimento-45",
     name: "Taste Of the Will Gato",
     description:
-      "Taste of the Wild es un alimento súper premium para gatos, elaborado con ingredientes que imitan su alimentación natural. Contiene carne real, frutas y vegetales, y no incluye cereales, siendo perfecto para gatos con sensibilidad o necesidades especiales. Aporta proteínas, antioxidantes y probióticos que promueven su bienestar general.\nPresentación: 2.27kg",
+      "Gracias a que su única fuente de proteína es el pescado, es un alimento ideal para mininos con sensibilidades alimentarias o estómagos delicados. Es apto para brindar una mejor nutrición en tu mascota en todas sus etapas: Gatitos, adultos y gatos senior. Aporta ácidos grasos que le ayudan al mantenimiento de un pelaje brillante y está suplementado con taurina para favorecer la salud del corazón y de los ojos.",
     image: "/img-productos/alimentos/taste-gato.webp",
     category: "alimentos",
   },
@@ -362,7 +362,7 @@ const alimentos = [
     id: "alimento-46",
     name: "Taste Of the Will Perro",
     description:
-      "Taste of the Wild es un alimento súper premium para perros, inspirado en su dieta natural. Está formulado con carne real, frutas y vegetales, sin cereales, lo que lo hace ideal para perros con sensibilidad alimentaria o que siguen dietas libres de granos. Su fórmula rica en proteínas, antioxidantes y probióticos favorece una nutrición equilibrada y saludable.\nPresentación: 2.27kg",
+      "Taste of The Wild High Prairie es un alimento de alta calidad a base bisonte asado y el venado asado. Es un alimento ideal para perros adultos. Es un concentrado sin cereales, con patatas y guisantes dulces que proporciona energía y un estilo de vida saludable para tu perro.",
     image: "/img-productos/alimentos/taste-dog.webp",
     category: "alimentos",
   },
