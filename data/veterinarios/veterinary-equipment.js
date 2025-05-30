@@ -1,7 +1,7 @@
 const Veterinarians = [
      {
        nombre: "Dr. Hector Fabio Ramirez Puentes",
-       cargo: "Veterinaria Principal",
+       cargo: "Veterinario Principal",
        imagen: "/veterinary-equipment/main-veterinarian.jpg",
        descripcion: "Médico Veterinario graduado de la Universidad Antonio Nariño (Popayan), con tres años de experiencia en el cuidado y tratamiento de especies caninas y felinas. Posee formación complementaria en medicina interna, farmacología, cirugía de tejidos blandos y ecografía, lo que le permite ofrecer una atención integral y de alta calidad a sus pacientes.",
      },
