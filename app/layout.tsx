@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Clinica Veterinaria Hercules - Cuidamos de tus mascotas",
+  icons: {
+    icon: "/favicon.svg",
+  },
   description: "Clínica veterinaria con servicios completos para el cuidado y bienestar de tus mascotas",
     generator: 'v0.dev'
 }
